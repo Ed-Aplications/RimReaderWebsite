@@ -31,6 +31,6 @@ Plain HTML and CSS, with nothing to build or install. Each page carries its own 
 ## Before launch (from the app's `docs/legal/README.md`)
 
 - A lawyer reviews the terms and the privacy policy.
-- Contact details: currently info@middletnautorepair.com.
+- Contact details: currently info@rimreader.com.
 - No sales on this site: GitHub Pages doesn't allow it. App sales go through the app stores; print-file sales would link to a store.
 - Pictures of the app must be real screenshots of the released app (brand style guide).
