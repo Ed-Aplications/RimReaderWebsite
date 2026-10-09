@@ -94,6 +94,15 @@ SUN = ('<svg viewBox="0 0 24 24" aria-hidden="true" class="only-dark"><circle cx
 MOON = ('<svg viewBox="0 0 24 24" aria-hidden="true" class="only-light"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>')
 
 
+def ver(path):
+    """A short fingerprint of an asset's contents. Pages ask for
+    site.css?v=<fingerprint>, so a visitor's browser fetches the new file the
+    moment it changes instead of showing an old copy it kept."""
+    import hashlib
+    with open(os.path.join(ROOT, path), "rb") as f:
+        return hashlib.md5(f.read()).hexdigest()[:8]
+
+
 def page_url(rel):
     rel = rel.replace(os.sep, "/")
     if rel == "index.html":
@@ -111,7 +120,7 @@ def head(meta, rel, root, extra_js):
     image = SITE + "/" + meta.get("image", "assets/icon/rim-reader-icon-512.png")
     noindex = '\n<meta name="robots" content="noindex">' if meta.get("noindex") else ""
     canonical = "" if meta.get("noindex") else '\n<link rel="canonical" href="%s">' % url
-    js = "".join('\n<script src="%sassets/js/%s" defer></script>' % (root, j) for j in extra_js)
+    js = "".join('\n<script src="%sassets/js/%s?v=%s" defer></script>' % (root, j, ver("assets/js/" + j)) for j in extra_js)
     return """<!doctype html>
 <html lang="en">
 <head>
@@ -131,12 +140,13 @@ def head(meta, rel, root, extra_js):
 <link rel="apple-touch-icon" href="{root}assets/icon/rim-reader-icon-192.png">
 <link rel="preload" href="{root}assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{{var t=localStorage.getItem('rr-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}}catch(e){{}}</script>
-<link rel="stylesheet" href="{root}assets/css/rim-reader.css">
-<link rel="stylesheet" href="{root}assets/css/site.css">
-<script src="{root}assets/js/theme.js" defer></script>{js}
+<link rel="stylesheet" href="{root}assets/css/rim-reader.css?v={v_tok}">
+<link rel="stylesheet" href="{root}assets/css/site.css?v={v_site}">
+<script src="{root}assets/js/theme.js?v={v_theme}" defer></script>{js}
 </head>
 """.format(full=html.escape(full), title_e=html.escape(title, quote=True), desc=desc, noindex=noindex,
-           canonical=canonical, url=url, image=image, root=root, js=js)
+           canonical=canonical, url=url, image=image, root=root, js=js,
+           v_tok=ver("assets/css/rim-reader.css"), v_site=ver("assets/css/site.css"), v_theme=ver("assets/js/theme.js"))
 
 
 def header(meta, root):

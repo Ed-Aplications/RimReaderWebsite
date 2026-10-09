@@ -59,7 +59,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--rr-accent); out
 @media (max-width: 600px) { .section { padding: var(--rr-space-8) 0; } }
 
 .hero { padding: var(--rr-space-9) 0; }
-.hero .wrap { display: grid; grid-template-columns: 1.3fr 1fr; gap: var(--rr-space-7); align-items: center; }
+.hero .wrap { display: grid; grid-template-columns: 1fr 1.15fr; gap: var(--rr-space-7); align-items: center; }
 .hero .lead { font-size: var(--rr-text-lead); line-height: var(--rr-lh-lead); color: var(--rr-text-2); max-width: 36em; }
 .hero .actions { display: flex; gap: var(--rr-space-5); align-items: center; flex-wrap: wrap; margin-top: var(--rr-space-6); }
 .hero .art { justify-self: center; width: min(100%, 360px); border-radius: 22%; }
@@ -284,3 +284,7 @@ details > div > :last-child { margin-bottom: 0; }
 .pill-list li { margin: 0; border: var(--rr-border-width) solid var(--rr-border); border-radius: var(--rr-radius-pill); padding: 4px 12px; font-size: var(--rr-text-small); }
 .two-col-list { columns: 2; column-gap: var(--rr-space-6); }
 @media (max-width: 600px) { .two-col-list { columns: 1; } }
+.hero-fig { margin: 0; }
+.hero-fig img { display: block; width: 100%; height: auto; border-radius: var(--rr-radius-card); }
+.hero-fig figcaption { font-size: var(--rr-text-small); line-height: var(--rr-lh-small); color: var(--rr-text-2); margin-top: var(--rr-space-2); }
+@media (max-width: 900px) { .hero-fig { margin-top: var(--rr-space-2); } }
