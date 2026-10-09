@@ -139,7 +139,8 @@ caption { caption-side: bottom; text-align: left; padding: var(--rr-space-3) var
 tr.here td { color: var(--rr-text); font-weight: var(--rr-weight-semibold); }
 
 /* Figures and diagrams */
-.fig { margin: var(--rr-space-5) 0; }
+.fig { margin: var(--rr-space-5) 0 var(--rr-space-6); }
+.fig { max-width: 900px; }
 .fig img, .fig svg { display: block; width: 100%; height: auto; border-radius: var(--rr-radius-card); }
 .fig figcaption, .diagram figcaption { font-size: var(--rr-text-small); line-height: var(--rr-lh-small); color: var(--rr-text-2); margin-top: var(--rr-space-2); }
 .diagram { margin: var(--rr-space-5) 0; background: var(--rr-surface); border: var(--rr-border-width) solid var(--rr-border); border-radius: var(--rr-radius-card); padding: var(--rr-space-4); }
