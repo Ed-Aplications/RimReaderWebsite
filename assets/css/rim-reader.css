@@ -1,0 +1,146 @@
+/* Rim Reader design tokens — brand/style-guide.md v1.1 (2026-10-02)
+ *
+ * Dark is the brand default. The light theme applies when the visitor's
+ * system asks for it, or when the page sets data-theme="light" on <html>
+ * (a theme toggle should set data-theme to "light" or "dark").
+ *
+ * Color values must match the app theme. app/alignment_app/test/brand_colours_test.dart
+ * compares every role here with the app on each test run and fails on any difference.
+ *
+ * Load Inter from brand/fonts (self-hosted) or Google Fonts before this file.
+ */
+
+:root {
+  /* ---- Brand constants (theme-independent) ---- */
+  --rr-navy: #0F1C2E;
+  --rr-white: #FFFFFF;
+  --rr-orange: #FF6A00;          /* safety orange: fills, and lines on dark */
+  --rr-orange-burnt: #B84A00;    /* lines, text and icons on light */
+
+  /* ---- Typography ---- */
+  --rr-font: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --rr-weight-regular: 400;
+  --rr-weight-medium: 500;
+  --rr-weight-semibold: 600;
+  --rr-weight-bold: 700;
+  --rr-weight-extrabold: 800;
+
+  --rr-text-h1: 3.5rem;      --rr-lh-h1: 4rem;       /* 56/64; 36/44 on mobile */
+  --rr-text-h2: 2.25rem;     --rr-lh-h2: 2.75rem;    /* 36/44; 28/36 on mobile */
+  --rr-text-h3: 1.5rem;      --rr-lh-h3: 2rem;       /* 24/32; 20/28 on mobile */
+  --rr-text-lead: 1.25rem;   --rr-lh-lead: 2rem;     /* 20/32 */
+  --rr-text-body: 1.0625rem; --rr-lh-body: 1.75rem;  /* 17/28; 16/26 on mobile */
+  --rr-text-small: 0.875rem; --rr-lh-small: 1.25rem; /* 14/20 */
+  --rr-text-eyebrow: 0.8125rem;                      /* 13, caps, +0.10em */
+  --rr-text-button: 1rem;
+
+  /* ---- Spacing (4-point grid) ---- */
+  --rr-space-1: 4px;
+  --rr-space-2: 8px;
+  --rr-space-3: 12px;
+  --rr-space-4: 16px;
+  --rr-space-5: 24px;
+  --rr-space-6: 32px;
+  --rr-space-7: 48px;
+  --rr-space-8: 64px;
+  --rr-space-9: 96px;
+
+  /* ---- Shape ---- */
+  --rr-radius-card: 12px;
+  --rr-radius-input: 8px;
+  --rr-radius-pill: 999px;
+  --rr-border-width: 1px;
+
+  /* ---- Layout ---- */
+  --rr-max-width: 1200px;
+  --rr-text-max-width: 720px;
+
+  /* ---- Dark theme (default) ---- */
+  color-scheme: dark;
+  --rr-bg: #0F1C2E;
+  --rr-surface: #182A42;
+  --rr-border: #2C3E57;
+  --rr-tonal: #2C3E57;          /* secondary (tonal) buttons: the app's secondaryContainer */
+  --rr-text: #FFFFFF;
+  --rr-text-2: #A7B3C4;
+  --rr-disabled: #5B6B80;
+  --rr-accent: #FF6A00;          /* links, rings, active item, orange text */
+  --rr-accent-fill: #FF6A00;     /* filled buttons, selected chips */
+  --rr-on-accent: #0F1C2E;       /* text on orange: always navy */
+  --rr-pass: #2ECC71;
+  --rr-warn: #FFC107;
+  --rr-fail: #FF5C5C;
+  --rr-logo: url("../logo/rim-reader-logo-dark-transparent.svg");
+}
+
+/* ---- Light theme: system preference, unless the page forces dark ---- */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --rr-bg: #F4F6F9;
+    --rr-surface: #FFFFFF;
+    --rr-border: #C9D2DE;
+    --rr-tonal: #DCE3EC;
+    --rr-text: #0F1C2E;
+    --rr-text-2: #4A5A70;
+    --rr-disabled: #7F8C9D;
+    --rr-accent: #B84A00;
+    --rr-accent-fill: #FF6A00;
+    --rr-on-accent: #0F1C2E;
+    --rr-pass: #1B7F45;
+    --rr-warn: #8A5A00;
+    --rr-fail: #C62828;
+    --rr-logo: url("../logo/rim-reader-logo-light-transparent.svg");
+  }
+}
+
+/* ---- Light theme: forced by the toggle ---- */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --rr-bg: #F4F6F9;
+  --rr-surface: #FFFFFF;
+  --rr-border: #C9D2DE;
+  --rr-tonal: #DCE3EC;
+  --rr-text: #0F1C2E;
+  --rr-text-2: #4A5A70;
+  --rr-disabled: #7F8C9D;
+  --rr-accent: #B84A00;
+  --rr-accent-fill: #FF6A00;
+  --rr-on-accent: #0F1C2E;
+  --rr-pass: #1B7F45;
+  --rr-warn: #8A5A00;
+  --rr-fail: #C62828;
+  --rr-logo: url("../logo/rim-reader-logo-light-transparent.svg");
+}
+
+/* ---- Minimal base styles that follow the guide ---- */
+body {
+  margin: 0;
+  background: var(--rr-bg);
+  color: var(--rr-text);
+  font-family: var(--rr-font);
+  font-size: var(--rr-text-body);
+  line-height: var(--rr-lh-body);
+}
+h1, h2, h3 { margin: 0 0 var(--rr-space-4); letter-spacing: -0.01em; }
+h1 { font-size: var(--rr-text-h1); line-height: var(--rr-lh-h1); font-weight: var(--rr-weight-extrabold); letter-spacing: -0.02em; }
+h2 { font-size: var(--rr-text-h2); line-height: var(--rr-lh-h2); font-weight: var(--rr-weight-bold); }
+h3 { font-size: var(--rr-text-h3); line-height: var(--rr-lh-h3); font-weight: var(--rr-weight-semibold); letter-spacing: 0; }
+a { color: var(--rr-accent); text-underline-offset: 3px; }
+.rr-eyebrow { font-size: var(--rr-text-eyebrow); font-weight: var(--rr-weight-semibold); letter-spacing: 0.1em; text-transform: uppercase; color: var(--rr-accent); }
+.rr-muted { color: var(--rr-text-2); }
+.rr-num { font-variant-numeric: tabular-nums; }
+.rr-card { background: var(--rr-surface); border: var(--rr-border-width) solid var(--rr-border); border-radius: var(--rr-radius-card); padding: var(--rr-space-4); }
+.rr-btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 0 var(--rr-space-5); border-radius: var(--rr-radius-pill); font: var(--rr-weight-semibold) var(--rr-text-button)/1.25 var(--rr-font); text-decoration: none; border: var(--rr-border-width) solid transparent; cursor: pointer; }
+.rr-btn-primary { background: var(--rr-accent-fill); color: var(--rr-on-accent); }
+.rr-btn-secondary { background: var(--rr-tonal); color: var(--rr-text); border-color: var(--rr-border); }
+.rr-status-pass { color: var(--rr-pass); }
+.rr-status-warn { color: var(--rr-warn); }
+.rr-status-fail { color: var(--rr-fail); }
+
+@media (max-width: 600px) {
+  :root { --rr-text-h1: 2.25rem; --rr-lh-h1: 2.75rem; --rr-text-h2: 1.75rem; --rr-lh-h2: 2.25rem; --rr-text-h3: 1.25rem; --rr-lh-h3: 1.75rem; --rr-text-body: 1rem; --rr-lh-body: 1.625rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; transition: none !important; }
+}

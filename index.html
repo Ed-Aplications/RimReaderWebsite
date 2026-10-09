@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rim Reader: Wheel Alignment</title>
+<meta name="description" content="Rim Reader turns your phone and a 3D-printed bracket into a wheel alignment tool: toe, camber and thrust angle in your driveway.">
+<meta name="theme-color" content="#0F1C2E">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon/rim-reader-icon-192.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/icon/rim-reader-icon-48.png">
+<link rel="apple-touch-icon" href="assets/icon/rim-reader-icon-192.png">
+<link rel="preload" href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('rr-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="stylesheet" href="assets/css/rim-reader.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/theme.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Rim Reader home">
+      <img class="only-dark" src="assets/logo/rim-reader-logo-dark-notagline-transparent.svg" alt="Rim Reader" width="180" height="60">
+      <img class="only-light" src="assets/logo/rim-reader-logo-light-notagline-transparent.svg" alt="Rim Reader" width="180" height="60">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html" aria-current="page">Home</a><a href="bracket.html">The bracket</a><a href="support.html">Support</a>
+      <a class="rr-btn rr-btn-primary" href="index.html#get">Get the app</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true" class="only-dark"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="only-light"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+  </div>
+</header>
+<main id="main">
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <p class="rr-eyebrow">Rack-free alignment</p>
+      <h1>Align your wheels in your driveway</h1>
+      <p class="lead">Rim Reader turns your phone and a 3D-printed bracket into a wheel alignment tool. It reads toe, camber and thrust angle from the phone&rsquo;s own gyroscope, with no strings, lasers or alignment rack.</p>
+      <div class="actions">
+        <a class="rr-btn rr-btn-primary" href="#get">Coming soon to Google Play</a>
+        <a href="#how">See how it works</a>
+      </div>
+    </div>
+    <img class="art" src="assets/icon/rim-reader-icon-512.png" alt="The Rim Reader icon: a car seen from above with orange wheels and a dashed centerline" width="360" height="360">
+  </div>
+</section>
+
+<section class="section alt" id="how">
+  <div class="wrap">
+    <p class="rr-eyebrow">How it works</p>
+    <h2>Three steps, one phone</h2>
+    <div class="grid three">
+      <div class="rr-card">
+        <div class="step-no">1</div>
+        <h3>Print the bracket</h3>
+        <p>The bracket holds your phone flat and rests two prongs on the rim&rsquo;s lip. Print ours, or make your own that meets seven simple rules.</p>
+      </div>
+      <div class="rr-card">
+        <div class="step-no">2</div>
+        <h3>Calibrate once</h3>
+        <p>Clamp your phone in the bracket and run Bracket Calibration. It measures your bracket&rsquo;s own small differences, and refuses a phone that moves.</p>
+      </div>
+      <div class="rr-card">
+        <div class="step-no">3</div>
+        <h3>Walk the car</h3>
+        <p>Hold the bracket on each wheel when the app asks. It tracks how the phone turns between wheels and shows each wheel&rsquo;s readings against your vehicle&rsquo;s spec.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="rr-eyebrow">What it measures</p>
+    <h2>The angles that wear your tires</h2>
+    <div class="grid two">
+      <div class="rr-card">
+        <h3>Toe</h3>
+        <p>Front and rear, for each wheel and in total. Toe is the angle you adjust most, and the one that wears tires fastest when it is off.</p>
+      </div>
+      <div class="rr-card">
+        <h3>Camber</h3>
+        <p>The lean of each wheel, with the left-right difference that makes a car pull.</p>
+      </div>
+      <div class="rr-card">
+        <h3>Thrust angle</h3>
+        <p>Where the rear axle points the car. The rear sets the line the front is aligned to.</p>
+      </div>
+      <div class="rr-card">
+        <h3>Caster <span class="tag">Coming later</span></h3>
+        <p>Read by steering the front wheels left and right.</p>
+      </div>
+    </div>
+    <div class="text">
+      <p class="rr-muted">Enter your vehicle&rsquo;s factory specs, or start from general ranges for everyday cars and SUVs, clearly marked as general. Scan the VIN or tire label with the camera to fill in your vehicle.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <p class="rr-eyebrow">Built to be honest</p>
+    <h2>It tells you when it isn&rsquo;t sure</h2>
+    <div class="grid three">
+      <div class="rr-card">
+        <h3>Checks its own work</h3>
+        <p>It measures its own drift, re-reads a wheel to confirm, and refuses to show a number it cannot stand behind.</p>
+      </div>
+      <div class="rr-card">
+        <h3>Works offline</h3>
+        <p>No signal needed in the garage. No account, no login.</p>
+      </div>
+      <div class="rr-card">
+        <h3>Your data stays on your phone</h3>
+        <p>Measurements, vehicles and settings stay on your phone unless you share them. See the <a href="privacy.html">privacy policy</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="rr-eyebrow">Who it&rsquo;s for</p>
+    <h2>From the driveway to the service truck</h2>
+    <div class="grid three">
+      <div class="rr-card"><h3>Do-it-yourselfers</h3><p>Check and set toe after replacing tie rods or other steering parts, without a trip to the shop for every adjustment.</p></div>
+      <div class="rr-card"><h3>Mobile mechanics</h3><p>Check alignment at the customer&rsquo;s driveway after suspension and steering work.</p></div>
+      <div class="rr-card"><h3>Shops without a rack</h3><p>Check toe and camber without the cost and space of an alignment rack.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="get">
+  <div class="wrap">
+    <div class="text">
+      <p class="rr-eyebrow">Availability</p>
+      <h2>Coming soon to Google Play</h2>
+      <p>Rim Reader is in testing on Android. An iPhone version will follow.</p>
+      <p>Want to hear when it&rsquo;s ready? Email <a href="mailto:info@middletnautorepair.com?subject=Rim%20Reader%20launch">info@middletnautorepair.com</a>.</p>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <img class="only-dark" src="assets/logo/rim-reader-logo-dark-notagline-transparent.svg" alt="" width="140" height="47">
+    <img class="only-light" src="assets/logo/rim-reader-logo-light-notagline-transparent.svg" alt="" width="140" height="47">
+    <nav aria-label="Footer">
+      <a href="index.html">Home</a>
+      <a href="bracket.html">The bracket</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy policy</a>
+      <a href="terms.html">Terms of use</a>
+    </nav>
+    <p>Rim Reader gives estimates, not a professional alignment. Have a qualified shop check your alignment before highway driving or carrying heavy loads.</p>
+    <p>&copy; 2026 Middle TN Auto Repair LLC. Rim Reader is made by Middle TN Auto Repair LLC, Tennessee. Contact: <a href="mailto:info@middletnautorepair.com">info@middletnautorepair.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
