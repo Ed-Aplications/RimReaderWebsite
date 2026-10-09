@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /src/
+Disallow: /tools/
+Sitemap: https://rimreader.com/sitemap.xml

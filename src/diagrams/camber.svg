@@ -1,0 +1,19 @@
+<svg viewBox="0 0 640 290" role="img" aria-labelledby="dg-camber"><title id="dg-camber">Camber seen from the front. Negative camber: the tops of the wheels lean in toward the car. Positive camber: they lean out.</title>
+<text class="d-text" x="165" y="30" text-anchor="middle">Negative camber (&#8722;)</text>
+<text class="d-small" x="165" y="50" text-anchor="middle">tops of the wheels lean in</text>
+<line class="d-thin" x1="25" y1="250" x2="305" y2="250"/>
+<rect class="d-fill" x="103" y="120" width="124" height="70" rx="10"/>
+<line class="d-dash" x1="65" y1="70" x2="65" y2="250"/>
+<g transform="rotate(9 65 250)"><rect class="d-accfill" x="45" y="104" width="40" height="146" rx="9"/></g>
+<line class="d-dash" x1="265" y1="70" x2="265" y2="250"/>
+<g transform="rotate(-9 265 250)"><rect class="d-accfill" x="245" y="104" width="40" height="146" rx="9"/></g>
+<text class="d-text" x="475" y="30" text-anchor="middle">Positive camber (+)</text>
+<text class="d-small" x="475" y="50" text-anchor="middle">tops of the wheels lean out</text>
+<line class="d-thin" x1="335" y1="250" x2="615" y2="250"/>
+<rect class="d-fill" x="413" y="120" width="124" height="70" rx="10"/>
+<line class="d-dash" x1="375" y1="70" x2="375" y2="250"/>
+<g transform="rotate(-9 375 250)"><rect class="d-accfill" x="355" y="104" width="40" height="146" rx="9"/></g>
+<line class="d-dash" x1="575" y1="70" x2="575" y2="250"/>
+<g transform="rotate(9 575 250)"><rect class="d-accfill" x="555" y="104" width="40" height="146" rx="9"/></g>
+<text class="d-small" x="320" y="282" text-anchor="middle">Seen from the front of the car. Angles exaggerated, not to scale.</text>
+</svg>

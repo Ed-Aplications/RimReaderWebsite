@@ -1,0 +1,21 @@
+<svg viewBox="0 0 640 420" role="img" aria-labelledby="dg-wedge"><title id="dg-wedge">The bracket from above with a phone in it. The phone's top touches the end stop at FRONT and its right side touches the rail. The orange wedge sits in the gap on the phone's left side and is pushed toward FRONT to lock it.</title>
+<path class="d-fill" d="M502 96 L502 30 A14 14 0 0 1 530 30 L530 96 Z"/><path class="d-fill" d="M110 96 L110 30 A14 14 0 0 1 138 30 L138 96 Z"/><path class="d-fill" d="M502 304 L502 370 A14 14 0 0 0 530 370 L530 304 Z"/><path class="d-fill" d="M110 304 L110 370 A14 14 0 0 0 138 370 L138 304 Z"/>
+<rect class="d-fill" x="110" y="80" width="420" height="240" rx="4"/>
+<polygon class="d-fill" points="498.0,122.3 142.0,94.3 142.0,80.0 498.0,80.0" style="fill:var(--rr-border)"/>
+<polygon class="d-fill" points="486.0,308.0 498.0,308.0 498.0,121.4 486.0,121.4" style="fill:var(--rr-border)"/>
+<polygon class="d-fill" points="452.0,320.0 498.0,320.0 498.0,308.0 452.0,308.0" style="fill:var(--rr-border)"/>
+<polygon class="d-fill" points="142.0,320.0 230.0,320.0 230.0,308.0 142.0,308.0" style="fill:var(--rr-border)"/>
+<rect class="d-bg" x="146" y="142" width="340" height="166" rx="16" style="stroke:currentColor;stroke-width:2.5"/>
+<polygon class="d-accfill" points="454.8,142.0 454.8,118.9 174.8,96.9 174.8,142.0"/>
+<polygon points="174.8,142.0 174.8,96.9 202.8,99.1 202.8,142.0" style="fill:var(--rr-accent);opacity:.65"/>
+<text class="d-text" x="512" y="200" text-anchor="middle" transform="rotate(-90 512 200)" style="font-size:12px;letter-spacing:1px">FRONT</text>
+<line class="d-acc" x1="260" y1="118" x2="380" y2="126" style="stroke:var(--rr-bg)"/>
+<path class="d-thin" d="M300 314 L300 392"/><text class="d-small" x="306" y="408">rail window, for right-side buttons</text>
+<path class="d-thin" d="M180 314 L150 392"/><text class="d-small" x="40" y="408">rail (phone&#8217;s right side)</text>
+<path class="d-thin" d="M492 240 L 600 240"/><text class="d-small" x="600" y="232" text-anchor="end">end stop</text>
+<path class="d-thin" d="M320 88 L320 12"/><text class="d-small" x="326" y="14">tapered wall (4.5&#176;)</text>
+<path class="d-thin" d="M200 120 L 70 30"/><text class="d-acctext" x="66" y="26" text-anchor="end" style="font-size:13px">wedge</text>
+<text class="d-small" x="320" y="220" text-anchor="middle" >phone, screen up</text>
+<path class="d-acc" d="M280 114 L380 121.0" style="stroke:var(--rr-on-accent);stroke-width:2.5"/>
+<path d="M379 115.0 L389 121.0 L379 127.0 Z" style="fill:var(--rr-on-accent)"/>
+</svg>

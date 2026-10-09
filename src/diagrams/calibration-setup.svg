@@ -1,0 +1,19 @@
+<svg viewBox="0 0 560 360" role="img" aria-labelledby="dg-cal"><title id="dg-cal">Calibration setup, facing the wall. A strip of tape is on the wall about 1 inch (25 mm) above the floor, with a V drawn on it pointing down. The bracket lies flat on the floor, FRONT to the left, with its prongs pressed against the wall below the tape and the right prong under the V.</title>
+<line class="d-line" x1="20" y1="262" x2="540" y2="262"/>
+<text class="d-small" x="24" y="282">floor</text><text class="d-small" x="24" y="40">wall</text>
+<rect x="396" y="116" width="160" height="96" rx="2" style="fill:var(--rr-tonal);stroke:var(--rr-text-2);stroke-width:1.5"/>
+<path class="d-acc" d="M462 142 L476 182 L490 142"/>
+<rect class="d-fill" x="70" y="232" width="420" height="30" rx="3"/>
+<rect class="d-bg" x="102" y="198" width="356" height="34" rx="3" style="stroke:currentColor;stroke-width:2"/>
+<rect x="462" y="246" width="28" height="16" rx="3" style="fill:none;stroke:var(--rr-accent);stroke-width:2;stroke-dasharray:4 3"/>
+<rect x="70" y="246" width="28" height="16" rx="3" style="fill:none;stroke:var(--rr-accent);stroke-width:2;stroke-dasharray:4 3"/>
+<text class="d-text" x="156" y="220" text-anchor="middle" style="font-size:12px;letter-spacing:1px">&#8592; FRONT</text>
+<line class="d-thin" x1="396" y1="142" x2="200" y2="84"/>
+<text class="d-text" x="24" y="70">tape, about 1 in (25 mm)</text>
+<text class="d-text" x="24" y="88">above the floor</text>
+<text class="d-small" x="476" y="108" text-anchor="middle">V pointing down: your mark</text>
+<line class="d-thin" x1="476" y1="266" x2="476" y2="290"/>
+<text class="d-small" x="476" y="306" text-anchor="middle">right prong under the V</text>
+<text class="d-small" x="280" y="328" text-anchor="middle">Dashed: the prongs, out of sight behind the bracket,</text>
+<text class="d-small" x="280" y="344" text-anchor="middle">pressed against the wall below the tape, never on it.</text>
+</svg>

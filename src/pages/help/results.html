@@ -1,0 +1,43 @@
+<!--{"title": "Read the result", "description": "How to read a Rim Reader result: confidence, total and individual toe, steer-ahead, thrust angle, camber, the spec check and what to adjust.", "nav": "help", "help": true}-->
+<h1>Read the result</h1>
+<p class="lead">The car drawing fills in as you go, and the result card appears below it when the lap closes. Read it in this order.</p>
+
+<h2>1. Confidence first</h2>
+<p>Every result is rated <strong>High</strong>, <strong>Medium</strong> or <strong>Low</strong>, with the reasons in plain words. A Low result is not necessarily wrong, but it is not evidence: measure again before adjusting anything. The reasons the app can give:</p>
+<ul>
+  <li>The phone drifted close to its limit.</li>
+  <li>Some readings did not agree with each other.</li>
+  <li>The measurement did not close cleanly.</li>
+  <li>A walk between readings took a long time.</li>
+  <li>The phone was knocked or spun during a walk.</li>
+  <li>The bracket calibration is missing. Run the bracket calibration.</li>
+  <li>The lap took a long time after the starting rest.</li>
+  <li>This phone graded Marginal (or Not suitable) in the bracket calibration.</li>
+</ul>
+
+<h2>2. The numbers</h2>
+<dl class="specs">
+  <dt>Front total toe</dt><dd>The two front wheels against each other: the number a spec sheet gives. + is toe-in, &minus; toe-out.</dd>
+  <dt>Each front wheel&rsquo;s toe</dt><dd>Measured against the thrust line. Above each wheel, for example <strong>Toe 0.16&deg; R</strong>: the front of the tire points 0.16&deg; right. On a left wheel R is toe-in; on a right wheel L is toe-in.</dd>
+  <dt>Steering (steer-ahead)</dt><dd>Which way the steering wheel will be turned when you drive straight, provided it was straight while you measured. Near zero is right.</dd>
+  <dt>Rear total toe</dt><dd>Not adjustable on most cars, but it sets the thrust line.</dd>
+  <dt>Thrust</dt><dd>Which way the rear axle points the car, L or R. Within 0.10&deg; it is called straight. Needs Thrust ticked.</dd>
+  <dt>Camber</dt><dd>Under each wheel; negative means the top leans in. Cross camber, left minus right, sits inside the car at each axle.</dd>
+</dl>
+<p>Read them against <a href="{{root}}help/alignment-basics.html">Alignment basics</a> if any of the terms are new.</p>
+
+<h2>3. The spec check</h2>
+<p>Each number is checked against your vehicle&rsquo;s specs, or the generic targets if it has none, and shown with words as well as colour:</p>
+<ul>
+  <li><span class="st-pass">In spec</span></li>
+  <li><span class="st-warn">Near the limit &mdash; check again</span></li>
+  <li><span class="st-fail">Low by 0.08&deg;</span> or <span class="st-fail">High by 0.08&deg;</span></li>
+</ul>
+<p>Camber is checked only when it is floor-corrected and calibrated. Old readings are checked again by the app&rsquo;s latest rules each time you open them.</p>
+
+<h2>4. What to adjust</h2>
+<p>One line per front wheel: turn the front of the tire <strong>in</strong> or <strong>out</strong>, and by how much, to reach the middle of the front toe spec (on generic targets, +0.05&deg; per wheel). Within 0.02&deg; it says <em>no change</em>. With no toe spec, the target is half the measured total, which straightens the steering wheel without changing the total.</p>
+<p>Then <a href="adjust-toe.html">adjust toe safely</a>.</p>
+
+<h2>Saved by itself</h2>
+<p>The lap saves itself on the phone; nothing is uploaded. Find it again in <strong>Settings &rarr; Garage &amp; History</strong>, add a note, compare it with another, or make a <a href="reports.html">PDF report</a>. Every result carries the notice: <em>Estimate made with Rim Reader, a consumer measuring aid, not a certified alignment. Readings can be wrong. Have the alignment verified by a qualified shop.</em></p>

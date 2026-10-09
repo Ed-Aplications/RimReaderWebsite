@@ -1,0 +1,20 @@
+<svg viewBox="0 0 520 470" role="img" aria-labelledby="dg-lap"><title id="dg-lap">The order of a full lap: rear left, rear right, rear left, rear right, then front right, front left, front right, front left. Each visit is read twice. With Thrust ticked, the lap starts at the left front door and reads the right front door on the way from the rear to the front.</title>
+<text class="d-text" x="260" y="44" text-anchor="middle">FRONT</text>
+<path class="d-thin" d="M250 56 L260 48 L270 56"/>
+<rect class="d-fill" x="185.0" y="80" width="150" height="320" rx="34"/>
+<rect class="d-bg" x="203.0" y="150" width="114" height="70" rx="12"/>
+<rect class="d-bg" x="203.0" y="300" width="114" height="50" rx="12"/>
+<g transform="rotate(0 181.0 142)"><rect class="d-accfill" x="170.0" y="112" width="22" height="60" rx="6"/></g>
+<g transform="rotate(0 339.0 142)"><rect class="d-accfill" x="328.0" y="112" width="22" height="60" rx="6"/></g>
+<g transform="rotate(0 181.0 338)"><rect class="d-accfill" x="170.0" y="308" width="22" height="60" rx="6"/></g>
+<g transform="rotate(0 339.0 338)"><rect class="d-accfill" x="328.0" y="308" width="22" height="60" rx="6"/></g>
+<circle class="d-bg" cx="137.0" cy="320" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="137.0" y="325" text-anchor="middle" style="font-size:14px">1</text><circle class="d-bg" cx="137.0" cy="356" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="137.0" y="361" text-anchor="middle" style="font-size:14px">3</text><circle class="d-bg" cx="383.0" cy="320" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="383.0" y="325" text-anchor="middle" style="font-size:14px">2</text><circle class="d-bg" cx="383.0" cy="356" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="383.0" y="361" text-anchor="middle" style="font-size:14px">4</text><circle class="d-bg" cx="383.0" cy="124" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="383.0" y="129" text-anchor="middle" style="font-size:14px">5</text><circle class="d-bg" cx="383.0" cy="160" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="383.0" y="165" text-anchor="middle" style="font-size:14px">7</text><circle class="d-bg" cx="137.0" cy="124" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="137.0" y="129" text-anchor="middle" style="font-size:14px">6</text><circle class="d-bg" cx="137.0" cy="160" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="137.0" y="165" text-anchor="middle" style="font-size:14px">8</text>
+<rect class="d-bg" x="178" y="208" width="14" height="44" rx="4" style="stroke:var(--rr-text-2);stroke-width:2;stroke-dasharray:4 4"/>
+<rect class="d-bg" x="328" y="208" width="14" height="44" rx="4" style="stroke:var(--rr-text-2);stroke-width:2;stroke-dasharray:4 4"/>
+<text class="d-small" x="171" y="226" text-anchor="end">left door</text>
+<text class="d-small" x="171" y="244" text-anchor="end">(Thrust: first)</text>
+<text class="d-small" x="349" y="226">right door</text>
+<text class="d-small" x="349" y="244">(Thrust: rear to front)</text>
+<text class="d-small" x="260" y="440" text-anchor="middle">Numbers are visits, in order. Each visit is two readings,</text>
+<text class="d-small" x="260" y="458" text-anchor="middle">with a lift between them: 16 readings for four wheels.</text>
+</svg>

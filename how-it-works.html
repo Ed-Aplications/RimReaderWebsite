@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it works | Rim Reader</title>
+<meta name="description" content="How Rim Reader measures wheel alignment with a phone&#x27;s gyroscope and a 3D-printed bracket, explained in plain words with diagrams.">
+<link rel="canonical" href="https://rimreader.com/how-it-works.html">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rim Reader">
+<meta property="og:title" content="How it works">
+<meta property="og:description" content="How Rim Reader measures wheel alignment with a phone&#x27;s gyroscope and a 3D-printed bracket, explained in plain words with diagrams.">
+<meta property="og:url" content="https://rimreader.com/how-it-works.html">
+<meta property="og:image" content="https://rimreader.com/assets/icon/rim-reader-icon-512.png">
+<meta name="theme-color" content="#0F1C2E">
+<link rel="icon" type="image/png" sizes="192x192" href="assets/icon/rim-reader-icon-192.png">
+<link rel="icon" type="image/png" sizes="48x48" href="assets/icon/rim-reader-icon-48.png">
+<link rel="apple-touch-icon" href="assets/icon/rim-reader-icon-192.png">
+<link rel="preload" href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<script>try{var t=localStorage.getItem('rr-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+<link rel="stylesheet" href="assets/css/rim-reader.css">
+<link rel="stylesheet" href="assets/css/site.css">
+<script src="assets/js/theme.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Rim Reader home">
+      <img class="only-dark" src="assets/logo/rim-reader-logo-dark-notagline-transparent.svg" alt="Rim Reader" width="180" height="60">
+      <img class="only-light" src="assets/logo/rim-reader-logo-light-notagline-transparent.svg" alt="Rim Reader" width="180" height="60">
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a><a href="how-it-works.html" aria-current="page">How it works</a><a href="bracket.html">The bracket</a><a href="help/index.html">Help</a><a href="faq.html">FAQ</a>
+      <a class="rr-btn rr-btn-primary" href="coming-soon.html#app">Get the app</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true" class="only-dark"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="only-light"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+  </div>
+</header>
+<main id="main">
+<section class="page-head">
+  <div class="wrap">
+    <p class="rr-eyebrow">How it works</p>
+    <h1>A gyroscope, two prongs and a walk round the car</h1>
+    <p class="lead">Your phone already measures how far it turns and which way is down. Rim Reader holds it against each wheel the same way every time, and compares the wheels with each other.</p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="media-row">
+      <div>
+        <h2>The idea</h2>
+        <p>The phone&rsquo;s <strong>gyroscope</strong> measures how far the phone has turned. Its <strong>accelerometer</strong> measures which way is down.</p>
+        <p>Rim Reader clamps the phone in a flat 3D-printed bracket. On each long edge the bracket has two prongs, 196 mm (about 7.7 in) apart. You hold the bracket on top of each wheel with the two prong tips resting on the rim&rsquo;s lip, at about 11 and 1 o&rsquo;clock.</p>
+        <p>The line between those two tips lies in the plane of the wheel, so its direction <em>is</em> the direction the wheel points. As you walk from wheel to wheel, the gyroscope tracks how far the phone turned on the way. That lets the app compare each wheel&rsquo;s direction with every other wheel&rsquo;s. Toe, thrust angle and steer-ahead all come from those comparisons.</p>
+        <p>Camber comes from gravity: the bracket stands on its edge against the side of the rim, and the accelerometer reads how far the wheel leans.</p>
+      </div>
+      <figure class="diagram"><svg viewBox="-20 0 620 450" role="img" aria-labelledby="dg-bow"><title id="dg-bow">The bracket on a wheel, seen from the side of the car. The bracket lies flat on top of the wheel, screen up. Two prong noses touch the flat ring of the rim's lip at about 11 and 1 o'clock, and the line between them is parallel to the wheel.</title>
+<circle class="d-fill" cx="260" cy="262" r="168"/>
+<circle class="d-bg" cx="260" cy="262" r="112" style="stroke:currentColor;stroke-width:2.5"/>
+<circle class="d-thin" cx="260" cy="262" r="100"/>
+<line class="d-thin" x1="260.0" y1="232.0" x2="260.0" y2="168.0" style="stroke-width:6;stroke:var(--rr-border)"/><line class="d-thin" x1="288.5" y1="252.7" x2="349.4" y2="233.0" style="stroke-width:6;stroke:var(--rr-border)"/><line class="d-thin" x1="277.6" y1="286.3" x2="315.3" y2="338.0" style="stroke-width:6;stroke:var(--rr-border)"/><line class="d-thin" x1="242.4" y1="286.3" x2="204.7" y2="338.0" style="stroke-width:6;stroke:var(--rr-border)"/><line class="d-thin" x1="231.5" y1="252.7" x2="170.6" y2="233.0" style="stroke-width:6;stroke:var(--rr-border)"/>
+<circle class="d-bg" cx="260" cy="262" r="26" style="stroke:currentColor;stroke-width:2"/>
+<rect class="d-fill" x="199.8" y="161.3" width="120.4" height="18" rx="3"/>
+<rect class="d-bg" x="207.8" y="145.3" width="90.4" height="16" rx="4" style="stroke:currentColor;stroke-width:2"/>
+<rect class="d-accfill" x="298.2" y="145.3" width="12" height="16" rx="2"/>
+<line class="d-acc" x1="203.8" y1="179.3" x2="316.2" y2="179.3" style="stroke-dasharray:6 5"/>
+<circle class="d-dot" cx="203.8" cy="179.3" r="6"/><circle class="d-dot" cx="316.2" cy="179.3" r="6"/>
+<line class="d-thin" x1="320.2" y1="175.3" x2="420" y2="122"/>
+<text class="d-acctext" x="426" y="116">prong noses on</text>
+<text class="d-acctext" x="426" y="134">the rim&#8217;s lip</text>
+<text class="d-small" x="426" y="152">about 11 and 1 o&#8217;clock</text>
+<line class="d-thin" x1="173.8" y1="153.3" x2="70" y2="128"/>
+<text class="d-text" x="-10" y="104">phone, screen up,</text>
+<text class="d-text" x="-10" y="122">in the bracket</text>
+<line class="d-thin" x1="260" y1="150" x2="260" y2="60"/>
+<text class="d-small" x="260" y="34" text-anchor="middle">the line between the noses</text>
+<text class="d-small" x="260" y="50" text-anchor="middle">is parallel to the wheel</text>
+<text class="d-small" x="280" y="444" text-anchor="middle">Seen from the side of the car. The bracket sticks out toward you, clear of the tire.</text>
+</svg></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="text">
+      <h2>One lap, step by step</h2>
+
+      <h3>1. A rest on the ground gives the gyroscope its zero</h3>
+      <p>Every lap starts with the bracket lying still on the ground for ten seconds. No phone gyroscope reads zero when it is still. That small leftover would add up during a walk round the car, so the app measures it while nothing is moving and subtracts it from everything after. The same rest tells the app which way is down. A hand can&rsquo;t give this zero: even a steady hand moves about 1&deg; a second.</p>
+
+      <h3>2. Every wheel is read twice, with a lift between</h3>
+      <p>At each wheel you hold still for a reading, lift the bracket right off, set it back and hold still again. Over a few seconds the gyroscope can&rsquo;t drift by any amount that matters. So if the two readings disagree, the bracket didn&rsquo;t go back on the same spot, and the app asks for that wheel again straight away. You find out at the wheel, not a lap later.</p>
+      <p>You don&rsquo;t tap anything. When the bracket is level and steady, the reading is taken by itself and the phone beeps and buzzes.</p>
+
+      <h3>3. Going back to each wheel measures the drift</h3>
+      <p>The app sets the order: rear left, rear right, rear left, rear right, then front right, front left, front right, front left. Each visit is two readings, so a full lap is 16. The wheels don&rsquo;t move between visits, so any difference between a wheel&rsquo;s first and second visit is drift that built up while you walked. The app measures that drift for this lap and removes it from every reading.</p>
+      <p>Each axle is closed this way on its own. If an axle&rsquo;s drift is too large to trust, the app asks you to read that axle again. After two redos it says the lap would not close, and shows no numbers. An honest refusal beats a wrong alignment.</p>
+    </div>
+    <figure class="diagram" style="max-width:560px"><svg viewBox="0 0 520 470" role="img" aria-labelledby="dg-lap"><title id="dg-lap">The order of a full lap: rear left, rear right, rear left, rear right, then front right, front left, front right, front left. Each visit is read twice. With Thrust ticked, the lap starts at the left front door and reads the right front door on the way from the rear to the front.</title>
+<text class="d-text" x="260" y="44" text-anchor="middle">FRONT</text>
+<path class="d-thin" d="M250 56 L260 48 L270 56"/>
+<rect class="d-fill" x="185.0" y="80" width="150" height="320" rx="34"/>
+<rect class="d-bg" x="203.0" y="150" width="114" height="70" rx="12"/>
+<rect class="d-bg" x="203.0" y="300" width="114" height="50" rx="12"/>
+<g transform="rotate(0 181.0 142)"><rect class="d-accfill" x="170.0" y="112" width="22" height="60" rx="6"/></g>
+<g transform="rotate(0 339.0 142)"><rect class="d-accfill" x="328.0" y="112" width="22" height="60" rx="6"/></g>
+<g transform="rotate(0 181.0 338)"><rect class="d-accfill" x="170.0" y="308" width="22" height="60" rx="6"/></g>
+<g transform="rotate(0 339.0 338)"><rect class="d-accfill" x="328.0" y="308" width="22" height="60" rx="6"/></g>
+<circle class="d-bg" cx="137.0" cy="320" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="137.0" y="325" text-anchor="middle" style="font-size:14px">1</text><circle class="d-bg" cx="137.0" cy="356" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="137.0" y="361" text-anchor="middle" style="font-size:14px">3</text><circle class="d-bg" cx="383.0" cy="320" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="383.0" y="325" text-anchor="middle" style="font-size:14px">2</text><circle class="d-bg" cx="383.0" cy="356" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="383.0" y="361" text-anchor="middle" style="font-size:14px">4</text><circle class="d-bg" cx="383.0" cy="124" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="383.0" y="129" text-anchor="middle" style="font-size:14px">5</text><circle class="d-bg" cx="383.0" cy="160" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="383.0" y="165" text-anchor="middle" style="font-size:14px">7</text><circle class="d-bg" cx="137.0" cy="124" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="137.0" y="129" text-anchor="middle" style="font-size:14px">6</text><circle class="d-bg" cx="137.0" cy="160" r="16" style="stroke:var(--rr-accent);stroke-width:2"/><text class="d-acctext" x="137.0" y="165" text-anchor="middle" style="font-size:14px">8</text>
+<rect class="d-bg" x="178" y="208" width="14" height="44" rx="4" style="stroke:var(--rr-text-2);stroke-width:2;stroke-dasharray:4 4"/>
+<rect class="d-bg" x="328" y="208" width="14" height="44" rx="4" style="stroke:var(--rr-text-2);stroke-width:2;stroke-dasharray:4 4"/>
+<text class="d-small" x="171" y="226" text-anchor="end">left door</text>
+<text class="d-small" x="171" y="244" text-anchor="end">(Thrust: first)</text>
+<text class="d-small" x="349" y="226">right door</text>
+<text class="d-small" x="349" y="244">(Thrust: rear to front)</text>
+<text class="d-small" x="260" y="440" text-anchor="middle">Numbers are visits, in order. Each visit is two readings,</text>
+<text class="d-small" x="260" y="458" text-anchor="middle">with a lift between them: 16 readings for four wheels.</text>
+</svg></figure>
+    <div class="text">
+      <h3>4. The rear axle sets the line the car drives along</h3>
+      <p>Measuring the front wheels alone tells you only their <strong>total</strong> toe: the two front wheels compared with each other. To know what each front wheel is doing on its own, you need the direction the car actually travels, and the rear axle sets that. The average direction of the two rear wheels is the <strong>thrust line</strong>. Each front wheel&rsquo;s toe is measured against it, and so is <strong>steer-ahead</strong>, which tells you whether your steering wheel will sit straight. That is why a full lap reads both axles.</p>
+    </div>
+    <div class="grid two">
+      <figure class="diagram"><svg viewBox="0 0 540 430" role="img" aria-labelledby="dg-thrust"><title id="dg-thrust">Thrust angle. The rear wheels point the car slightly off its centreline. The thrust line, square to the rear axle, is at an angle to the body's centreline: that angle is the thrust angle.</title>
+<text class="d-text" x="210" y="40" text-anchor="middle">FRONT</text>
+<path class="d-thin" d="M200 52 L210 44 L220 52"/>
+<rect class="d-fill" x="135.0" y="70" width="150" height="300" rx="34"/>
+<rect class="d-bg" x="153.0" y="140" width="114" height="70" rx="12"/>
+<rect class="d-bg" x="153.0" y="270" width="114" height="50" rx="12"/>
+<g transform="rotate(0 131.0 132)"><rect class="d-accfill" x="120.0" y="102" width="22" height="60" rx="6"/></g>
+<g transform="rotate(0 289.0 132)"><rect class="d-accfill" x="278.0" y="102" width="22" height="60" rx="6"/></g>
+<g transform="rotate(7 131.0 308)"><rect class="d-accfill" x="120.0" y="278" width="22" height="60" rx="6"/></g>
+<g transform="rotate(7 289.0 308)"><rect class="d-accfill" x="278.0" y="278" width="22" height="60" rx="6"/></g>
+<line class="d-dash" x1="210" y1="56" x2="210" y2="400"/>
+<line class="d-acc" x1="210" y1="308" x2="238.0" y2="79.7"/>
+<path class="d-accfill" transform="rotate(7 238.0 79.7)" d="M230.0 93.7 L238.0 77.7 L246.0 93.7 Z"/>
+<path class="d-acc" d="M210 188 A120 120 0 0 1 224.6 188.9" style="stroke-width:2"/>
+<line class="d-thin" x1="131.0" y1="308" x2="289.0" y2="308"/>
+<text class="d-acctext" x="318" y="158">thrust line</text>
+<text class="d-small" x="318" y="176">where the rear axle points the car</text>
+<text class="d-text" x="318" y="212">thrust angle</text>
+<text class="d-small" x="318" y="230">between the two lines</text>
+<text class="d-small" x="318" y="110">dashed: the body&#8217;s centreline,</text>
+<text class="d-small" x="318" y="128">read at the front door glass</text>
+<text class="d-small" x="260" y="420" text-anchor="middle">Seen from above. Angles exaggerated, not to scale.</text>
+</svg></figure>
+      <figure class="diagram"><svg viewBox="0 0 540 430" role="img" aria-labelledby="dg-steer"><title id="dg-steer">Steer-ahead. Both front wheels point a little to one side of the thrust line while the steering wheel is straight, so driving straight needs the steering wheel turned.</title>
+<rect class="d-fill" x="135.0" y="70" width="150" height="300" rx="34"/>
+<rect class="d-bg" x="153.0" y="140" width="114" height="70" rx="12"/>
+<rect class="d-bg" x="153.0" y="270" width="114" height="50" rx="12"/>
+<g transform="rotate(-8 131.0 132)"><rect class="d-accfill" x="120.0" y="102" width="22" height="60" rx="6"/></g>
+<g transform="rotate(-8 289.0 132)"><rect class="d-accfill" x="278.0" y="102" width="22" height="60" rx="6"/></g>
+<g transform="rotate(0 131.0 308)"><rect class="d-accfill" x="120.0" y="278" width="22" height="60" rx="6"/></g>
+<g transform="rotate(0 289.0 308)"><rect class="d-accfill" x="278.0" y="278" width="22" height="60" rx="6"/></g>
+<line class="d-dash" x1="210" y1="30" x2="210" y2="400"/>
+<line class="d-acc" x1="210" y1="172" x2="189.1" y2="23.5"/>
+<text class="d-small" x="222" y="28">dashed: the thrust line</text>
+<text class="d-acctext" x="318" y="162">front wheels&#8217; average</text>
+<text class="d-small" x="318" y="180">direction, off the thrust line</text>
+<g transform="translate(400 300) rotate(14)"><circle class="d-line" cx="0" cy="0" r="40"/><circle class="d-line" cx="0" cy="0" r="9"/><line class="d-line" x1="-40" y1="0" x2="-9" y2="0"/><line class="d-line" x1="9" y1="0" x2="40" y2="0"/><line class="d-line" x1="0" y1="9" x2="0" y2="40"/></g>
+<text class="d-small" x="400" y="364" text-anchor="middle">steering wheel sits</text>
+<text class="d-small" x="400" y="381" text-anchor="middle">turned when driving straight</text>
+<text class="d-small" x="260" y="420" text-anchor="middle">Seen from above. Angles exaggerated, not to scale.</text>
+</svg></figure>
+    </div>
+    <div class="text">
+      <h3>5. The front doors give the thrust angle (optional)</h3>
+      <p>The thrust line shows which way the rear wheels push the car, but not whether that is straight compared with the car&rsquo;s <strong>body</strong>. Tick Thrust, and the app also reads each front door&rsquo;s window glass: the bracket lies flat in the bottom back corner of the window. The two doors are mirror images, so the curve of the glass cancels out, and together they give the body&rsquo;s centreline. The <strong>thrust angle</strong> is the rear axle&rsquo;s direction against that centreline, and it shows which rear wheel is off.</p>
+      <p>A thrust angle within 0.10&deg; is reported as straight, because a door can hang slightly differently from its twin (we estimate up to about a tenth of a degree). If a door reading fails, only the thrust angle is dropped. The wheel numbers are kept.</p>
+
+      <h3>6. Camber, read on the bracket&rsquo;s edge and corrected for the floor (optional)</h3>
+      <p>Camber is read after the toe lap has closed, on a second trip round the car, so handling the bracket for camber can&rsquo;t disturb the toe numbers. At each tire:</p>
+      <ol>
+        <li><strong>Two floor readings.</strong> The bracket lies flat on the floor beside the tire, then is turned round where it lies. Together they measure the slope of the floor there.</li>
+        <li><strong>One top-of-rim reading</strong>, as for toe, which tells camber which way the wheel faces.</li>
+        <li><strong>Two side-of-rim readings</strong>, with a lift between. The bracket stands on its edge against the side of the rim, and the two readings must agree.</li>
+      </ol>
+      <p>The app corrects each axle&rsquo;s camber for the floor slope it measured beside the tires, so a garage floor that isn&rsquo;t quite level is accounted for. Reading the top of the rim as a reference made camber about 3.5 times more repeatable in our tests than gravity alone, the way a simple digital gauge reads it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="media-row">
+      <div>
+        <h2>Bracket calibration</h2>
+        <p>No printed bracket is perfect, and no phone sits perfectly square in it. So before the first measurement, then every 30 days and with any new phone or bracket, you run Bracket Calibration. It takes a few minutes on a hard floor against a wall, at a mark on a strip of tape. It measures:</p>
+        <ul>
+          <li><strong>The angle between the bracket&rsquo;s two long edges.</strong> The left wheels are read on one edge and the right wheels on the other, so any difference would go straight into total toe. The app measures it two independent ways, with the gyroscope and with gravity, and won&rsquo;t save a calibration where they disagree by more than 0.05&deg;.</li>
+          <li><strong>How the phone sits in the bracket</strong>, for example &ldquo;0.29&deg; nose down, 0.28&deg; to the side&rdquo;. After calibration the app reads the bracket, not the phone.</li>
+          <li><strong>The camber zero</strong>: the combined offset of the phone&rsquo;s accelerometer and the bracket&rsquo;s edge.</li>
+          <li><strong>A grade for the phone</strong>: Good, Marginal or Not suitable, from a minute lying still, and how much carrying it costs in drift, from two short walks.</li>
+        </ul>
+        <p>A calibration that isn&rsquo;t good says why and isn&rsquo;t used. <a href="help/calibration.html">Calibration, step by step</a>.</p>
+      </div>
+      <figure class="diagram"><svg viewBox="0 0 560 360" role="img" aria-labelledby="dg-cal"><title id="dg-cal">Calibration setup, facing the wall. A strip of tape is on the wall about 1 inch (25 mm) above the floor, with a V drawn on it pointing down. The bracket lies flat on the floor, FRONT to the left, with its prongs pressed against the wall below the tape and the right prong under the V.</title>
+<line class="d-line" x1="20" y1="262" x2="540" y2="262"/>
+<text class="d-small" x="24" y="282">floor</text><text class="d-small" x="24" y="40">wall</text>
+<rect x="396" y="116" width="160" height="96" rx="2" style="fill:var(--rr-tonal);stroke:var(--rr-text-2);stroke-width:1.5"/>
+<path class="d-acc" d="M462 142 L476 182 L490 142"/>
+<rect class="d-fill" x="70" y="232" width="420" height="30" rx="3"/>
+<rect class="d-bg" x="102" y="198" width="356" height="34" rx="3" style="stroke:currentColor;stroke-width:2"/>
+<rect x="462" y="246" width="28" height="16" rx="3" style="fill:none;stroke:var(--rr-accent);stroke-width:2;stroke-dasharray:4 3"/>
+<rect x="70" y="246" width="28" height="16" rx="3" style="fill:none;stroke:var(--rr-accent);stroke-width:2;stroke-dasharray:4 3"/>
+<text class="d-text" x="156" y="220" text-anchor="middle" style="font-size:12px;letter-spacing:1px">&#8592; FRONT</text>
+<line class="d-thin" x1="396" y1="142" x2="200" y2="84"/>
+<text class="d-text" x="24" y="70">tape, about 1 in (25 mm)</text>
+<text class="d-text" x="24" y="88">above the floor</text>
+<text class="d-small" x="476" y="108" text-anchor="middle">V pointing down: your mark</text>
+<line class="d-thin" x1="476" y1="266" x2="476" y2="290"/>
+<text class="d-small" x="476" y="306" text-anchor="middle">right prong under the V</text>
+<text class="d-small" x="280" y="328" text-anchor="middle">Dashed: the prongs, out of sight behind the bracket,</text>
+<text class="d-small" x="280" y="344" text-anchor="middle">pressed against the wall below the tape, never on it.</text>
+</svg></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid two">
+      <div class="text">
+        <h2>What it asks of you</h2>
+        <ul>
+          <li>Level, firm ground. Steering wheel centered by its spokes and logo, then left alone. Engine off, wheels chocked, the car on its wheels, not on a jack.</li>
+          <li>Both hands on the bracket, fingertips beside the prong tips on the rim&rsquo;s lip.</li>
+          <li>Prongs on the metal lip of the rim, never on the tire&rsquo;s rubber. In one test session, prongs touching rubber roughly doubled the error.</li>
+          <li>Three to five minutes for the phone to settle to the outdoor temperature. A phone that is warming up or cooling down drifts.</li>
+          <li>The screen on and the app in front for the whole lap.</li>
+        </ul>
+        <p><a href="help/before-you-measure.html">Before you measure: the full checklist</a></p>
+      </div>
+      <div class="text">
+        <h2>What it doesn&rsquo;t do</h2>
+        <ul>
+          <li>It is not a professional alignment. Every result, and every page of the report, says it is an estimate to be checked by a qualified shop.</li>
+          <li>It doesn&rsquo;t measure caster, steering axis inclination or toe-out on turns yet.</li>
+          <li>It doesn&rsquo;t know your car&rsquo;s tie-rod threads. It says which way to turn the front of each tire and how far; you turn the rod a little and watch the number move the right way.</li>
+          <li>Your car&rsquo;s factory specs aren&rsquo;t built in yet; they are coming soon. Until then you type them in, or use the generic targets. <a href="coming-soon.html#factory-specs">Why</a>.</li>
+        </ul>
+        <p><a href="accuracy.html">Accuracy and limits</a> &middot; <a href="compare.html">Other ways to check alignment</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="only-dark" src="assets/logo/rim-reader-logo-dark-notagline-transparent.svg" alt="" width="140" height="47">
+        <img class="only-light" src="assets/logo/rim-reader-logo-light-notagline-transparent.svg" alt="" width="140" height="47">
+        <p>Rack-free alignment from your phone and a 3D-printed bracket.</p>
+      </div>
+      <nav class="foot-cols" aria-label="Footer"><div><h2>Rim Reader</h2><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="bracket.html">The bracket</a></li><li><a href="accuracy.html">Accuracy and limits</a></li><li><a href="compare.html">Ways to check alignment</a></li><li><a href="coming-soon.html">What&rsquo;s coming</a></li></ul></div><div><h2>Help</h2><ul><li><a href="help/index.html">Help center</a></li><li><a href="help/getting-started.html">Getting started</a></li><li><a href="help/lessons.html">Animated lessons</a></li><li><a href="help/troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Contact and support</a></li></ul></div><div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div></nav>
+    </div>
+    <p>Rim Reader gives estimates, not a professional alignment. Have a qualified shop check your alignment before highway driving or carrying heavy loads.</p>
+    <p>&copy; 2026 Middle TN Auto Repair LLC. Rim Reader is made by Middle TN Auto Repair LLC, Tennessee. Contact: <a href="mailto:info@rimreader.com">info@rimreader.com</a></p>
+  </div>
+</footer>
+</body>
+</html>

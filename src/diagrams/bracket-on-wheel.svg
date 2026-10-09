@@ -1,0 +1,23 @@
+<svg viewBox="-20 0 620 450" role="img" aria-labelledby="dg-bow"><title id="dg-bow">The bracket on a wheel, seen from the side of the car. The bracket lies flat on top of the wheel, screen up. Two prong noses touch the flat ring of the rim's lip at about 11 and 1 o'clock, and the line between them is parallel to the wheel.</title>
+<circle class="d-fill" cx="260" cy="262" r="168"/>
+<circle class="d-bg" cx="260" cy="262" r="112" style="stroke:currentColor;stroke-width:2.5"/>
+<circle class="d-thin" cx="260" cy="262" r="100"/>
+<line class="d-thin" x1="260.0" y1="232.0" x2="260.0" y2="168.0" style="stroke-width:6;stroke:var(--rr-border)"/><line class="d-thin" x1="288.5" y1="252.7" x2="349.4" y2="233.0" style="stroke-width:6;stroke:var(--rr-border)"/><line class="d-thin" x1="277.6" y1="286.3" x2="315.3" y2="338.0" style="stroke-width:6;stroke:var(--rr-border)"/><line class="d-thin" x1="242.4" y1="286.3" x2="204.7" y2="338.0" style="stroke-width:6;stroke:var(--rr-border)"/><line class="d-thin" x1="231.5" y1="252.7" x2="170.6" y2="233.0" style="stroke-width:6;stroke:var(--rr-border)"/>
+<circle class="d-bg" cx="260" cy="262" r="26" style="stroke:currentColor;stroke-width:2"/>
+<rect class="d-fill" x="199.8" y="161.3" width="120.4" height="18" rx="3"/>
+<rect class="d-bg" x="207.8" y="145.3" width="90.4" height="16" rx="4" style="stroke:currentColor;stroke-width:2"/>
+<rect class="d-accfill" x="298.2" y="145.3" width="12" height="16" rx="2"/>
+<line class="d-acc" x1="203.8" y1="179.3" x2="316.2" y2="179.3" style="stroke-dasharray:6 5"/>
+<circle class="d-dot" cx="203.8" cy="179.3" r="6"/><circle class="d-dot" cx="316.2" cy="179.3" r="6"/>
+<line class="d-thin" x1="320.2" y1="175.3" x2="420" y2="122"/>
+<text class="d-acctext" x="426" y="116">prong noses on</text>
+<text class="d-acctext" x="426" y="134">the rim&#8217;s lip</text>
+<text class="d-small" x="426" y="152">about 11 and 1 o&#8217;clock</text>
+<line class="d-thin" x1="173.8" y1="153.3" x2="70" y2="128"/>
+<text class="d-text" x="-10" y="104">phone, screen up,</text>
+<text class="d-text" x="-10" y="122">in the bracket</text>
+<line class="d-thin" x1="260" y1="150" x2="260" y2="60"/>
+<text class="d-small" x="260" y="34" text-anchor="middle">the line between the noses</text>
+<text class="d-small" x="260" y="50" text-anchor="middle">is parallel to the wheel</text>
+<text class="d-small" x="280" y="444" text-anchor="middle">Seen from the side of the car. The bracket sticks out toward you, clear of the tire.</text>
+</svg>
