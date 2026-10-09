@@ -7,6 +7,8 @@ The public website for Rim Reader, hosted free on GitHub Pages from this reposit
 
 **This repository is public.** Only website files belong here. The app, its code, data and notes stay in the private `Car-Alignment-App` repository.
 
+The website and the app are one project in two repositories. When the app changes something this site shows or copies (see "Where things come from" below), the site is updated in the same piece of work. A fact found wrong here is fixed at its source in the app repository first.
+
 ## How the pages are made
 
 The finished pages (`*.html` at the top and in `help/`) are **generated**. Don't edit them directly: edit the matching file in `src/pages/`, then run
@@ -51,6 +53,14 @@ Shortcuts a page can use (see the top of `tools/build.py`):
 - **Terms page:** the text of `docs/legal/terms-of-use-v5.md` in the app repository. When the app's terms get a new version, this page must be updated to match.
 - **Privacy page:** written from Section 9 of the terms and from what this site does. It also covers the license plate reader used with the shop features, which the terms don't mention yet. If the app's handling of information changes, both change together.
 - **Facts:** every number and step on the site comes from the app repository's guides, requirements and test results as of app version 0.127 (October 2026). No competitor or vendor is named, and prices aren't published until launch.
+
+## Kept in step with the app
+
+This website is part of the Rim Reader project, together with the private `Car-Alignment-App` repository (Ed, 2026-10-09).
+
+- **When the app changes something the site describes, the site changes too.** That covers features, steps, accuracy, phones, the bracket, lessons, brand files, terms and privacy.
+- **A change here that states something about the app must be true in the app repository first.**
+- The "Facts" line above names the app version the site matches. Update it each time the two are brought in step.
 
 ## Before launch (from the app's `docs/legal/README.md`)
 
