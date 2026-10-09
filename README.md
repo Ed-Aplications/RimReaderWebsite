@@ -2,8 +2,8 @@
 
 The public website for Rim Reader, hosted free on GitHub Pages from this repository's `main` branch.
 
-- Address now: https://ed-aplications.github.io/RimReaderWebsite/
-- Later: the Rim Reader domain, once bought (Settings → Pages → Custom domain).
+- Address: https://rimreader.com (bought at Namecheap, 2026-10-09). The `CNAME` file holds the domain; GitHub Pages needs it.
+- Before the domain is connected: https://ed-aplications.github.io/RimReaderWebsite/
 
 **This repository is public.** Only website files belong here. The app, its code, data and notes stay in the private `Car-Alignment-App` repository.
 
