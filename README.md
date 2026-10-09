@@ -54,14 +54,6 @@ Shortcuts a page can use (see the top of `tools/build.py`):
 - **Privacy page:** written from Section 9 of the terms and from what this site does. It also covers the license plate reader used with the shop features, which the terms don't mention yet. If the app's handling of information changes, both change together.
 - **Facts:** every number and step on the site comes from the app repository's guides, requirements and test results as of app version 0.127 (October 2026). No competitor or vendor is named, and prices aren't published until launch.
 
-## Kept in step with the app
-
-This website is part of the Rim Reader project, together with the private `Car-Alignment-App` repository (Ed, 2026-10-09).
-
-- **When the app changes something the site describes, the site changes too.** That covers features, steps, accuracy, phones, the bracket, lessons, brand files, terms and privacy.
-- **A change here that states something about the app must be true in the app repository first.**
-- The "Facts" line above names the app version the site matches. Update it each time the two are brought in step.
-
 ## Before launch (from the app's `docs/legal/README.md`)
 
 - A lawyer reviews the terms and the privacy policy.
