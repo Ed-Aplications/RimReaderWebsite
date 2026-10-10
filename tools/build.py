@@ -87,6 +87,7 @@ HELP = [
         ("help/bracket-setup.html", "Wedge and phone"),
         ("help/calibration.html", "Bracket Calibration"),
         ("help/garage.html", "Vehicles and specs"),
+        ("help/backup.html", "Back up and restore"),
     ]),
     ("Measure", [
         ("help/before-you-measure.html", "Before you measure"),
