@@ -39,7 +39,7 @@ Shortcuts a page can use (see the top of `tools/build.py`):
 | `help/` | The help center: getting started, setup, calibration, measuring, results, adjusting, garage, reports, troubleshooting, all 16 lessons, alignment basics |
 | `support.html` | How support works and how to contact us. Usable as the app stores' support URL |
 | `privacy.html` | Privacy policy. Usable as the app stores' privacy-policy URL |
-| `terms.html` | Terms of Use and Safety, version 5, word for word as the app shows it |
+| `terms.html` | Terms of Use and Safety, version 6, word for word as the app shows it |
 | `404.html` | Shown for an address that doesn't exist |
 
 ## Where things come from
@@ -49,9 +49,9 @@ Shortcuts a page can use (see the top of `tools/build.py`):
 - **Font:** Inter (SIL Open Font License, `assets/fonts/LICENSE.txt`), served from this site in web format.
 - **Lessons:** `assets/js/lesson-engine.js` and `assets/js/lessons-data.js` are copied from the app repository's lesson gallery (`docs/design/tutorial/`), so the site plays the same lessons as the app. When the lessons change in the app, copy them again. `assets/js/lessons.js` is the player.
 - **Sample reports:** `assets/img/report/` are the report design samples from `docs/design/alignment-report/` in the app repository, with made-up names and numbers, and are captioned that way. Replace them with real exports from the released app.
-- **Bracket pictures:** computer renderings of bracket design 1.7.0, made from its print files, labelled as renderings on the page. They are not photos.
-- **Terms page:** the text of `docs/legal/terms-of-use-v5.md` in the app repository. When the app's terms get a new version, this page must be updated to match.
-- **Privacy page:** written from Section 9 of the terms and from what this site does. It also covers the license plate reader used with the shop features, which the terms don't mention yet. If the app's handling of information changes, both change together.
+- **Bracket pictures:** `assets/img/render/`, made in Blender from the print files of bracket design 1.7.0. Re-make them when the bracket changes.
+- **Terms page:** the text of `docs/legal/terms-of-use-v6.md` in the app repository. When the app's terms get a new version, this page must be updated to match.
+- **Privacy page:** written from Section 9 of the terms and from what this site does. If the app's handling of information changes, both change together.
 - **Facts:** every number and step on the site comes from the app repository's guides, requirements and test results as of app version 0.127 (October 2026). No competitor or vendor is named, and prices aren't published until launch.
 
 ## Before launch (from the app's `docs/legal/README.md`)

@@ -289,3 +289,4 @@ details > div > :last-child { margin-bottom: 0; }
 .hero-fig img { display: block; width: 100%; height: auto; border-radius: var(--rr-radius-card); }
 .hero-fig figcaption { font-size: var(--rr-text-small); line-height: var(--rr-lh-small); color: var(--rr-text-2); margin-top: var(--rr-space-2); }
 @media (max-width: 900px) { .hero-fig { margin-top: var(--rr-space-2); } }
+.text + .reports { margin-top: var(--rr-space-6); }
