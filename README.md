@@ -58,4 +58,4 @@ A page whose settings include `"redirect": "page.html#anchor"` only sends visito
 - **Bracket pictures:** `assets/img/bracket/`, made from the print files of bracket design 1.7.0. Re-make them when the bracket changes.
 - **Terms page:** the text of `docs/legal/terms-of-use-v6.md` in the app repository. When the app's terms get a new version, this page must be updated to match.
 - **Privacy page:** written from Section 9 of the terms and from what this site does. If the app's handling of information changes, both change together.
-- **Facts:** every number and step on the site comes from the app repository's guides, requirements and test results as of app version 0.128 (October 2026). Figures used on several pages live in `src/facts.json`.
+- **Facts:** every number and step on the site comes from the app repository's guides, requirements and test results as of app version 0.129 (October 2026). Figures used on several pages live in `src/facts.json`.
