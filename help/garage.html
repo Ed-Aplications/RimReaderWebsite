@@ -43,17 +43,18 @@
 <div class="wrap help-layout">
 <article class="help-main">
 <nav class="crumbs" aria-label="Breadcrumb"><a href="../help/">Help</a></nav><details class="help-topics"><summary>Help topics</summary><nav class="help-nav-phone" aria-label="Help topics (phone)"><p class="help-group">Start here</p><ul><li><a href="../help/">Help center</a></li><li><a href="../help/getting-started.html">Getting started</a></li></ul><p class="help-group">Set up</p><ul><li><a href="../help/bracket-setup.html">Wedge and phone</a></li><li><a href="../help/calibration.html">Bracket Calibration</a></li><li><a href="../help/garage.html" aria-current="page">Vehicles and specs</a></li></ul><p class="help-group">Measure</p><ul><li><a href="../help/before-you-measure.html">Before you measure</a></li><li><a href="../help/measure-toe.html">Measure toe</a></li><li><a href="../help/thrust-angle.html">Add thrust angle</a></li><li><a href="../help/camber.html">Add camber</a></li></ul><p class="help-group">Results</p><ul><li><a href="../help/results.html">Read the result</a></li><li><a href="../help/adjust-toe.html">Adjust toe safely</a></li><li><a href="../help/reports.html">History, reports and sharing</a></li></ul><p class="help-group">Learn</p><ul><li><a href="../help/alignment-basics.html">Alignment basics</a></li><li><a href="../help/lessons.html">All 16 lessons</a></li></ul><p class="help-group">Fix a problem</p><ul><li><a href="../help/troubleshooting.html">Troubleshooting</a></li></ul></nav></details><h1>Vehicles and specs</h1>
-<p class="lead">The garage keeps your vehicles and the specs each is checked against. Open it with <strong>Select Vehicle</strong> or <strong>Settings &rarr; Garage &amp; History</strong>. Adding a vehicle is optional: without one, results are checked against the generic targets.</p>
+<p class="lead">The garage keeps your vehicles and the specs each is checked against. Open it with <strong>Select Vehicle</strong> or <strong>Settings &rarr; Garage &amp; History</strong>. Measuring needs a vehicle, with its VIN.</p>
 
 <h2 id="add">Add a vehicle</h2>
 <ul>
-  <li><strong>Name</strong> (optional) and <strong>VIN</strong> (optional, with a scan button).</li>
+  <li><strong>Name</strong> (optional) and <strong>VIN</strong> (required, with a scan button).</li>
   <li><strong>Year, Make, Model</strong>: pick the year first, then the make, then the model. The lists come from the US government&rsquo;s vehicle database, built into the app, from 1981 to 2027. If yours is missing, choose <em>Other (type it)</em>.</li>
   <li><strong>Tire size</strong> in three boxes, such as 235 / 55 / 17, with a camera button.</li>
   <li><strong>Show Toe In</strong>: Degrees, Degrees and Minutes, mm or inches. For mm or inches, say where your spec sheet measures toe: at the tire or at the rim. Camber and thrust are always in degrees.</li>
   <li><strong>Spec source</strong>, and <strong>Notes</strong> with a shop plan.</li>
 </ul>
 <p>The first vehicle you add is the one in use. Tap a vehicle&rsquo;s box to use it; it says <strong>In use</strong>. Each box has History, Edit and Delete buttons.</p>
+<p>How many vehicles you can measure depends on your plan. Deleting a vehicle that has readings keeps its readings in History and keeps its place on your plan; adding it back with the same VIN takes the place back.</p>
 
 <h2 id="specs">Specs</h2>
 <p>Each vehicle has a <strong>Spec source</strong>:</p>
@@ -88,6 +89,8 @@
   <li>Only part of the VIN is sent, never its serial number. <a href="../privacy.html">Privacy</a></li>
   <li>It refuses a barcode that isn&rsquo;t a VIN, or a VIN whose check digit doesn&rsquo;t match. You can always type it.</li>
   <li>The VIN identifies the vehicle. It doesn&rsquo;t give alignment specs.</li>
+  <li>A vehicle without a 17-character VIN (from before 1981, a trailer, a kit car) can have a shorter one, 5 to 16 letters and numbers. Nothing is filled from it; pick the year, make and model yourself.</li>
+  <li>Once a vehicle has readings, its VIN is locked. A different car needs its own vehicle.</li>
 </ul>
 
 <h2 id="tire">Scan the tire size</h2>
