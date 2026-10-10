@@ -32,7 +32,7 @@ Shortcuts a page can use (see the top of `tools/build.py`):
 | `index.html` | Home |
 | `how-it-works.html` | How the app measures, in plain words, with diagrams |
 | `bracket.html` | The bracket: parts, sizes, the wedge finder, which phones fit, printing, care, make your own |
-| `accuracy.html` | What has been measured, and what hasn't been tested yet |
+| `accuracy.html` | How repeatable the readings are in our tests, and what makes the difference |
 | `compare.html` | Ways to check alignment, compared by type (no brand names) |
 | `coming-soon.html` | What's coming: Google Play, iPhone, print files, factory specs and why they come later, shop plans |
 | `faq.html` | Frequently asked questions, with a search box |

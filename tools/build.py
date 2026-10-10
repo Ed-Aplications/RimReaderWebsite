@@ -41,7 +41,7 @@ FOOTER = [
     ("Rim Reader", [
         ("how-it-works.html", "How it works"),
         ("bracket.html", "The bracket"),
-        ("accuracy.html", "Accuracy and limits"),
+        ("accuracy.html", "Accuracy"),
         ("compare.html", "Ways to check alignment"),
         ("coming-soon.html", "What&rsquo;s coming"),
     ]),
