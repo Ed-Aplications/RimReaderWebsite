@@ -3,143 +3,109 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rim Reader: Wheel Alignment</title>
-<meta name="description" content="Rim Reader turns your phone and a 3D-printed bracket into a wheel alignment tool: toe, steer-ahead, thrust angle and camber in your driveway.">
+<title>Rim Reader: wheel alignment at home with your phone</title>
+<meta name="description" content="Check and set your wheel alignment at home with your phone and a 3D-printed bracket: toe, steer-ahead, thrust angle and camber, in your driveway.">
 <link rel="canonical" href="https://rimreader.com/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Rim Reader">
-<meta property="og:title" content="Rim Reader: Wheel Alignment">
-<meta property="og:description" content="Rim Reader turns your phone and a 3D-printed bracket into a wheel alignment tool: toe, steer-ahead, thrust angle and camber in your driveway.">
+<meta property="og:title" content="Rim Reader: wheel alignment at home with your phone">
+<meta property="og:description" content="Check and set your wheel alignment at home with your phone and a 3D-printed bracket: toe, steer-ahead, thrust angle and camber, in your driveway.">
 <meta property="og:url" content="https://rimreader.com/">
-<meta property="og:image" content="https://rimreader.com/assets/img/render/hero-wheel-og.jpg">
-<meta name="theme-color" content="#0F1C2E">
+<meta property="og:image" content="https://rimreader.com/assets/img/bracket/hero-wheel-og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The Rim Reader bracket with a phone in it, on top of a car&#x27;s front wheel">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0F1C2E" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#F4F6F9" media="(prefers-color-scheme: light)">
 <link rel="icon" type="image/png" sizes="192x192" href="assets/icon/rim-reader-icon-192.png">
 <link rel="icon" type="image/png" sizes="48x48" href="assets/icon/rim-reader-icon-48.png">
 <link rel="apple-touch-icon" href="assets/icon/rim-reader-icon-192.png">
 <link rel="preload" href="assets/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Inter-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
 <script>try{var t=localStorage.getItem('rr-theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 <link rel="stylesheet" href="assets/css/rim-reader.css?v=220312db">
-<link rel="stylesheet" href="assets/css/site.css?v=c00f22c4">
-<script src="assets/js/theme.js?v=9801827c" defer></script>
+<link rel="stylesheet" href="assets/css/site.css?v=b52b3dbe">
+<script src="assets/js/theme.js?v=9b9dd2b1" defer></script>
+<script src="assets/js/lesson-loader.js?v=9297f56c" defer></script>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"Rim Reader","legalName":"Middle TN Auto Repair LLC","url":"https://rimreader.com/","logo":"https://rimreader.com/assets/icon/rim-reader-icon-512.png","email":"info@rimreader.com"},{"@type":"WebSite","name":"Rim Reader","url":"https://rimreader.com/"}]}</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-header">
   <div class="wrap">
-    <a class="brand" href="index.html" aria-label="Rim Reader home">
-      <img class="only-dark" src="assets/logo/rim-reader-logo-dark-notagline-transparent.svg" alt="Rim Reader" width="180" height="60">
-      <img class="only-light" src="assets/logo/rim-reader-logo-light-notagline-transparent.svg" alt="Rim Reader" width="180" height="60">
-    </a>
-    <nav class="nav" aria-label="Main">
-      <a href="index.html" aria-current="page">Home</a><a href="how-it-works.html">How it works</a><a href="bracket.html">The bracket</a><a href="help/index.html">Help</a><a href="faq.html">FAQ</a>
-      <a class="rr-btn rr-btn-primary" href="coming-soon.html#app">Get the app</a>
-    </nav>
+    <a class="brand" href="./" aria-label="Rim Reader home"><img class="only-dark" src="assets/logo/rim-reader-logo-dark-notagline-transparent.svg" alt="Rim Reader" width="180" height="60"><img class="only-light" src="assets/logo/rim-reader-logo-light-notagline-transparent.svg" alt="Rim Reader" width="180" height="60"></a>
+    <nav class="nav" aria-label="Main"><a href="how-it-works.html">How it works</a><a href="bracket.html">The bracket</a><a href="accuracy.html">Accuracy</a><a href="help/">Help</a><a href="faq.html">FAQ</a></nav>
+    <a class="rr-btn rr-btn-primary head-cta" href="coming-soon.html">Coming soon</a>
     <button class="theme-toggle" type="button" aria-label="Switch theme"><svg viewBox="0 0 24 24" aria-hidden="true" class="only-dark"><circle cx="12" cy="12" r="4.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="only-light"><path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
   </div>
 </header>
 <main id="main">
+<div hidden id="lesson-engine" data-src="assets/js/lesson-engine.js?v=4fefc97e assets/js/lessons-data.js?v=d68dd6e7 assets/js/lessons.js?v=96be109b"></div>
 <section class="hero">
   <div class="wrap">
     <div>
-      <p class="rr-eyebrow">Rack-free alignment</p>
+      <p class="rr-eyebrow">Wheel alignment at home</p>
       <h1>Align your wheels in your driveway</h1>
-      <p class="lead">Rim Reader turns your phone and a 3D-printed bracket into a wheel alignment tool. It reads toe, steer-ahead, thrust angle and camber from the phone&rsquo;s own gyroscope and accelerometer, with no strings, lasers or alignment rack.</p>
+      <p class="lead">Your phone and a 3D-printed bracket check and set your toe, camber and thrust angle. No rack, no strings, no lasers.</p>
       <div class="actions">
-        <a class="rr-btn rr-btn-primary" href="coming-soon.html#app">Coming soon to Google Play</a>
+        <a class="rr-btn rr-btn-primary" href="coming-soon.html">Coming soon to Google Play</a>
         <a href="how-it-works.html">See how it works</a>
       </div>
     </div>
-    <figure class="hero-fig"><img src="assets/img/render/hero-wheel.webp" alt="The Rim Reader bracket with a phone clamped in it, lying flat on top of a car's front wheel with its prongs on the rim's lip" width="1600" height="900"><figcaption>In use, you hold the bracket with both hands.</figcaption></figure>
-  </div>
-</section>
-
-<section class="section alt">
-  <div class="wrap">
-    <p class="rr-eyebrow">What it measures</p>
-    <h2>The angles that wear your tires and tilt your steering wheel</h2>
-    <div class="grid three">
-      <div class="rr-card">
-        <h3>Toe</h3>
-        <p>Each wheel&rsquo;s toe-in or toe-out, and each axle&rsquo;s total. Toe is the angle you adjust most, and the one that wears tires fastest when it is off.</p>
-      </div>
-      <div class="rr-card">
-        <h3>Steer-ahead</h3>
-        <p>Whether your steering wheel will sit straight when the car drives straight. It is the commonest reason a car comes back from an alignment with the wheel still crooked.</p>
-      </div>
-      <div class="rr-card">
-        <h3>Thrust angle</h3>
-        <p>Where the rear axle points the car, measured against the body at the front door glass. It also shows which rear wheel is the one that is off.</p>
-      </div>
-      <div class="rr-card">
-        <h3>Camber</h3>
-        <p>Each wheel&rsquo;s lean and each axle&rsquo;s cross camber, corrected for the slope of the floor beside each tire.</p>
-      </div>
-      <div class="rr-card">
-        <h3>What to adjust</h3>
-        <p>One line per front wheel: turn the front of the tire in or out, and by how much, to reach the middle of your spec.</p>
-      </div>
-      <div class="rr-card">
-        <h3>Caster <span class="tag">Coming later</span></h3>
-        <p>Planned, read by steering each front wheel left and right. It is greyed out in the app until it is built and tested.</p>
-      </div>
-    </div>
-    <div class="text">
-      <p class="rr-muted">Check against your vehicle&rsquo;s own specs from its service information or a shop printout, or against the app&rsquo;s generic targets for a typical street car, which are always marked as generic. Built-in factory specs are <a href="coming-soon.html#factory-specs">coming soon</a>.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <p class="rr-eyebrow">How it works</p>
-    <h2>Print, calibrate, walk the car</h2>
-    <div class="grid four">
-      <div class="rr-card">
-        <div class="step-no">1</div>
-        <h3>Print the bracket</h3>
-        <p>A flat bracket holds your phone and touches the rim&rsquo;s lip at two points, the same way every time. Print ours (files at launch), or <a href="bracket.html#make-your-own">make your own</a>.</p>
-      </div>
-      <div class="rr-card">
-        <div class="step-no">2</div>
-        <h3>Calibrate</h3>
-        <p>A few minutes on a hard floor against a wall measures your bracket and how the phone sits in it. Repeat every 30 days; the app reminds you.</p>
-      </div>
-      <div class="rr-card">
-        <div class="step-no">3</div>
-        <h3>Walk the car</h3>
-        <p>Hold the bracket on each wheel the screen lights. Readings are taken by themselves: hold still and the phone beeps and buzzes. A full lap is 16 readings.</p>
-      </div>
-      <div class="rr-card">
-        <div class="step-no">4</div>
-        <h3>Read and adjust</h3>
-        <p>Every number comes with a confidence, High, Medium or Low, and the reasons. Adjust, measure again, and compare before and after.</p>
-      </div>
-    </div>
-    <div class="cta-band"><div class="actions"><a class="rr-btn rr-btn-secondary" href="how-it-works.html">How it works, in plain words</a><a href="help/index.html">Step-by-step guides</a></div></div>
+    <figure class="hero-fig"><img src="assets/img/bracket/hero-wheel.webp" srcset="assets/img/bracket/hero-wheel-800.webp 800w, assets/img/bracket/hero-wheel.webp 1600w" sizes="(max-width: 900px) 100vw, 640px" alt="The Rim Reader bracket with a phone clamped in it, lying flat on top of a car's front wheel with its prongs on the rim's lip" width="1600" height="900" fetchpriority="high"><figcaption>In use, you hold the bracket with both hands.</figcaption></figure>
   </div>
 </section>
 
 <section class="section alt">
   <div class="wrap">
     <div class="media-row">
+      <div class="text">
+        <p class="rr-eyebrow">How a reading works</p>
+        <h2>Hold it on the wheel. The phone does the rest.</h2>
+        <p>Hold the bracket on top of each wheel the screen lights, with its prongs on the rim&rsquo;s metal lip. When it is level and still, the phone takes the reading by itself and beeps. A full lap of the car takes about four minutes, or about 2&frac14; once you&rsquo;ve done a few.</p>
+        <p><a href="how-it-works.html">How it works, step by step</a></p>
+      </div>
+      <figure class="lesson" data-lesson="Bracket on the Rim"><div class="lesson-name">Bracket on the Rim</div><button class="lesson-poster" type="button" aria-label="Play the lesson: Bracket on the Rim"><img class="only-dark" src="assets/img/lesson/bracket-on-the-rim-dark.webp" alt="" width="480" height="456" loading="lazy" decoding="async"><img class="only-light" src="assets/img/lesson/bracket-on-the-rim-light.webp" alt="" width="480" height="456" loading="lazy" decoding="async"><span class="play-badge" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>Play</span></button><figcaption class="lesson-line"></figcaption><div class="lesson-ctl"></div><noscript><p class="rr-muted">This animated lesson needs JavaScript.</p></noscript></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <p class="rr-eyebrow">What it helps with</p>
+    <h2>The problems an alignment fixes</h2>
+    <ul class="problems">
+      <li><b>Steering wheel off-centre on a straight road?</b><span>Rim Reader reads <a href="help/alignment-basics.html#steer-ahead">steer-ahead</a>: where your steering wheel will sit when the car drives straight.</span></li>
+      <li><b>Tires wearing on one edge?</b><span>Toe and camber, for each wheel and each axle, checked against your specs.</span></li>
+      <li><b>New tie rods, struts or control arms?</b><span>Check the toe after the work, adjust, and measure again to compare before and after.</span></li>
+      <li><b>Car pulling or crabbing down the road?</b><span>The <a href="help/alignment-basics.html#thrust">thrust angle</a> shows whether the rear axle is steering the car, and which rear wheel is off.</span></li>
+    </ul>
+    <p>For each front wheel it gives one line: turn the front of the tire <strong>in</strong> or <strong>out</strong>, and by how much. <a href="help/alignment-basics.html">The angles, in plain words</a></p>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="wrap">
+    <div class="split">
       <div>
-        <p class="rr-eyebrow">Built to be honest</p>
-        <h2>It checks its own work</h2>
-        <ul>
-          <li><strong>Every wheel is read twice, with a lift between.</strong> If the bracket didn&rsquo;t go back on the same spot, the app knows at that wheel, in seconds.</li>
-          <li><strong>Drift is measured, not guessed.</strong> Each wheel is visited twice, so the app measures how far the phone&rsquo;s gyroscope drifted during your walk and removes it.</li>
-          <li><strong>Every result is rated.</strong> High, Medium or Low confidence, with the reasons in plain words. If a lap doesn&rsquo;t close, it shows no numbers rather than wrong ones.</li>
-          <li><strong>It never uses the compass.</strong> A compass is useless next to a steel car.</li>
-        </ul>
+        <p class="rr-eyebrow">Three steps</p>
+        <h2>Print, calibrate, walk the car</h2>
+        <ol class="steps">
+          <li><strong>Print the bracket.</strong> Two printed parts, no hardware to buy. Our print files come at launch, or <a href="make-your-own.html">make your own</a>.</li>
+          <li><strong>Calibrate once a month.</strong> A few minutes on a hard floor against a wall. The app reminds you.</li>
+          <li><strong>Walk the car.</strong> Hold the bracket on each wheel in turn. Every result comes with a confidence rating, High, Medium or Low, and the reasons.</li>
+        </ol>
       </div>
       <div>
-        <div class="stats" style="grid-template-columns:1fr 1fr">
-          <div class="stat"><b>0.013&deg;</b><span>rear total toe, typical lap-to-lap variation</span></div>
-          <div class="stat"><b>0.026&deg;</b><span>front total toe, typical lap-to-lap variation</span></div>
-          <div class="stat"><b>0.018&deg;</b><span>camber at one wheel, session to session</span></div>
-          <div class="stat"><b>about 2&frac14; min</b><span>a full four-wheel toe lap, by a practised user</span></div>
-        </div>
-        <p><a href="accuracy.html">More about accuracy</a></p>
+        <h2>What you need</h2>
+        <ul class="checklist">
+          <li>An Android phone running Android 10 or newer, with a gyroscope</li>
+          <li>The bracket and one wedge, printed in PETG. No printer? A library, makerspace or print service can print it.</li>
+          <li>Level, firm ground and wheel chocks</li>
+          <li>For calibration: a wall, a strip of tape and a pen</li>
+        </ul>
+        <p class="rr-muted">Works offline. No account. Your readings stay on your phone.</p>
       </div>
     </div>
   </div>
@@ -147,61 +113,65 @@
 
 <section class="section">
   <div class="wrap">
-    <div class="text">
-        <p class="rr-eyebrow">Reports</p>
-        <h2>A report anyone can read</h2>
-        <p>Any saved reading can make a three-page PDF. Page one is laid out like a shop&rsquo;s printout: each angle, its spec range and its status in words, <span class="st-pass">In spec</span>, <span class="st-warn">Near the limit &mdash; check again</span> or <span class="st-fail">Low by 0.31&deg;</span>. Page two shows the same numbers on a picture of the car, with where the steering wheel will sit. Page three explains toe, camber and thrust in plain words.</p>
-        <p>Mobile mechanics and shops will be able to add their name and logo, compare before and after side by side, or print a check-only report with a recommended service. Those features are coming with the shop plans. <a href="help/reports.html">About reports and sharing</a></p>
-    </div>
-    <div class="reports">
-      <figure><img src="assets/img/report/sample-mobile-mechanic-1.webp" alt="Sample Alignment Report, page 1: a table of every angle before and after, with spec ranges and status words" width="935" height="1210" loading="lazy"><figcaption>Page 1, the readings. Sample report, made-up numbers.</figcaption></figure>
-      <figure><img src="assets/img/report/sample-mobile-mechanic-2.webp" alt="Sample Alignment Report, page 2: the car from above with each tire coloured by its result, and a steering wheel panel" width="935" height="1210" loading="lazy"><figcaption>Page 2, at a glance. Sample report, made-up numbers.</figcaption></figure>
-      <figure><img src="assets/img/report/sample-mobile-mechanic-3.webp" alt="Sample Alignment Report, page 3: picture cards explaining toe, camber, caster, thrust angle, steer-ahead and cross camber" width="935" height="1210" loading="lazy"><figcaption>Page 3, the explainer. Sample report, made-up numbers.</figcaption></figure>
+    <div class="media-row">
+      <div class="text">
+        <p class="rr-eyebrow">Built to be honest</p>
+        <h2>It checks its own work</h2>
+        <ul>
+          <li><strong>Every wheel is read twice, with a lift between.</strong> If the bracket didn&rsquo;t go back on the same spot, you find out at that wheel.</li>
+          <li><strong>Drift is measured, not guessed.</strong> Each wheel is visited twice, so the app measures how far the phone&rsquo;s gyroscope drifted and removes it.</li>
+          <li><strong>If a lap doesn&rsquo;t add up, it shows no numbers</strong> rather than wrong ones.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="stats" style="grid-template-columns:1fr">
+          <div class="stat"><b>0.026&deg;</b><span>front total toe: typical variation from one lap to the next</span></div>
+        </div>
+        <p><a href="accuracy.html">How accurate it is, and how it compares</a></p>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="section alt">
   <div class="wrap">
-    <p class="rr-eyebrow">Who it&rsquo;s for</p>
-    <h2>From the driveway to the service truck</h2>
-    <div class="grid four">
-      <div class="rr-card"><h3>Do-it-yourselfers</h3><p>Check and set toe after replacing tie rods, struts or control arms, or after a pothole, without a shop trip for every adjustment.</p></div>
-      <div class="rr-card"><h3>Enthusiasts</h3><p>Lowered and lifted cars, autocross and track days, classics: check alignment as often as you change it.</p></div>
-      <div class="rr-card"><h3>Mobile mechanics</h3><p>Check alignment in the customer&rsquo;s driveway after suspension or steering work, and hand them a report.</p></div>
-      <div class="rr-card"><h3>Shops without a rack</h3><p>Check toe and camber between alignments, without the cost and floor space of an alignment rack.</p></div>
+    <div class="media-row">
+      <div class="text">
+        <p class="rr-eyebrow">Reports</p>
+        <h2>A report anyone can read</h2>
+        <p>Any saved reading makes a three-page PDF: every angle with its spec range and its status in words, a picture of the car with where the steering wheel will sit, and a page that explains it all in plain words.</p>
+        <p><a href="help/reports.html">See all three pages</a></p>
+      </div>
+      <figure class="one-report"><img src="assets/img/report/sample-diy-2.webp" srcset="assets/img/report/sample-diy-2-600.webp 600w, assets/img/report/sample-diy-2.webp 935w" sizes="420px" alt="Sample Alignment Report, page 2: the car from above with each tire coloured by its result, and a steering wheel panel" width="935" height="1210" loading="lazy" decoding="async"><figcaption>Sample report, made-up numbers.</figcaption></figure>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="wrap">
-    <div class="grid three">
-      <div>
-        <h3>Works offline</h3>
-        <p>No signal needed in the garage. No account and no login.</p>
-      </div>
-      <div>
-        <h3>Your data stays on your phone</h3>
-        <p>Vehicles, readings and settings stay on your phone unless you share them. See the <a href="privacy.html">privacy policy</a>.</p>
-      </div>
-      <div>
-        <h3>Lessons built in</h3>
-        <p>Sixteen short animated lessons play before each job until you turn them off. <a href="help/lessons.html">Watch them here</a>.</p>
-      </div>
-    </div>
+    <p class="rr-eyebrow">Who it&rsquo;s for</p>
+    <h2>From the driveway to the service truck</h2>
+    <ul class="who">
+      <li><b>Do-it-yourselfers</b><span>Set toe after new parts or a pothole, without a shop trip for every adjustment.</span></li>
+      <li><b>Enthusiasts</b><span>Lowered, lifted, track or classic: check alignment as often as you change it.</span></li>
+      <li><b>Mobile mechanics</b><span>Check alignment in the customer&rsquo;s driveway and hand them a report.</span></li>
+      <li><b>Shops without a rack</b><span>Check toe and camber between alignments, without the rack.</span></li>
+    </ul>
   </div>
 </section>
 
-<section class="section alt" id="get">
+<section class="section alt">
   <div class="wrap">
-    <div class="text">
-      <p class="rr-eyebrow">Availability</p>
-      <h2>Coming soon to Google Play</h2>
-      <p>Rim Reader is in testing on Android. An iPhone version will follow. The bracket&rsquo;s print files will be published when the app launches, and pricing will be announced at launch.</p>
-      <p>Want to hear when it&rsquo;s ready? Email <a href="mailto:info@rimreader.com?subject=Rim%20Reader%20launch">info@rimreader.com</a>.</p>
-      <p><a href="coming-soon.html">Everything that&rsquo;s coming, including factory specs</a></p>
-    </div>
+    <p class="rr-eyebrow">Availability</p>
+    <h2>Coming soon to Google Play</h2>
+    <p>Rim Reader is in testing on Android.</p>
+    <ul class="status-row">
+      <li><b>Android app</b> coming soon</li>
+      <li><b>Bracket print files</b> at launch</li>
+      <li><b>iPhone</b> later</li>
+      <li><b>Built-in factory specs</b> later</li>
+    </ul>
+    <p class="link-row"><a href="coming-soon.html">Everything that&rsquo;s coming</a></p>
   </div>
 </section>
 </main>
@@ -209,11 +179,10 @@
   <div class="wrap">
     <div class="foot-top">
       <div class="foot-brand">
-        <img class="only-dark" src="assets/logo/rim-reader-logo-dark-notagline-transparent.svg" alt="" width="140" height="47">
-        <img class="only-light" src="assets/logo/rim-reader-logo-light-notagline-transparent.svg" alt="" width="140" height="47">
-        <p>Rack-free alignment from your phone and a 3D-printed bracket.</p>
+        <img class="only-dark" src="assets/logo/rim-reader-logo-dark-notagline-transparent.svg" alt="" width="140" height="47"><img class="only-light" src="assets/logo/rim-reader-logo-light-notagline-transparent.svg" alt="" width="140" height="47">
+        <p>Wheel alignment at home, with your phone and a 3D-printed bracket.</p>
       </div>
-      <nav class="foot-cols" aria-label="Footer"><div><h2>Rim Reader</h2><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="bracket.html">The bracket</a></li><li><a href="accuracy.html">Accuracy</a></li><li><a href="compare.html">Ways to check alignment</a></li><li><a href="coming-soon.html">What&rsquo;s coming</a></li></ul></div><div><h2>Help</h2><ul><li><a href="help/index.html">Help center</a></li><li><a href="help/getting-started.html">Getting started</a></li><li><a href="help/lessons.html">Animated lessons</a></li><li><a href="help/troubleshooting.html">Troubleshooting</a></li><li><a href="faq.html">FAQ</a></li><li><a href="support.html">Contact and support</a></li></ul></div><div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div></nav>
+      <nav class="foot-cols" aria-label="Footer"><div><h2>Rim Reader</h2><ul><li><a href="how-it-works.html">How it works</a></li><li><a href="accuracy.html">Accuracy and other methods</a></li><li><a href="coming-soon.html">What&rsquo;s coming</a></li><li><a href="faq.html">FAQ</a></li></ul></div><div><h2>The bracket</h2><ul><li><a href="bracket.html">The bracket</a></li><li><a href="bracket.html#wedge">Find your wedge</a></li><li><a href="bracket-print.html">Print and care</a></li><li><a href="make-your-own.html">Make your own</a></li></ul></div><div><h2>Help</h2><ul><li><a href="help/">Help center</a></li><li><a href="help/getting-started.html">Getting started</a></li><li><a href="help/troubleshooting.html">Troubleshooting</a></li><li><a href="help/lessons.html">Animated lessons</a></li><li><a href="support.html">Contact and support</a></li></ul></div><div><h2>Legal</h2><ul><li><a href="privacy.html">Privacy policy</a></li><li><a href="terms.html">Terms of use</a></li></ul></div></nav>
     </div>
     <p>Rim Reader gives estimates, not a professional alignment. Have a qualified shop check your alignment before highway driving or carrying heavy loads.</p>
     <p>&copy; 2026 Middle TN Auto Repair LLC. Rim Reader is made by Middle TN Auto Repair LLC, Tennessee. Contact: <a href="mailto:info@rimreader.com">info@rimreader.com</a></p>

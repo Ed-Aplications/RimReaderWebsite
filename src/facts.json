@@ -1,0 +1,20 @@
+{
+  "_about": "Numbers and phrases used on more than one page. Change them here, run tools/build.py, and every page follows. Each comes from the app repository's guides and test results.",
+  "lap-time": "about four minutes, or about 2&frac14; once you&rsquo;ve done a few",
+  "front-only-time": "under a minute",
+  "rear-toe-rep": "0.013&deg;",
+  "front-toe-rep": "0.026&deg;",
+  "steer-rep": "0.030&deg;",
+  "camber-rep": "0.018&deg;",
+  "camber-gravity-rep": "0.064&deg;",
+  "camber-gain": "about 3.5 times",
+  "phone-width": "67 to 91 mm",
+  "phone-thick": "15 mm",
+  "recal-days": "30",
+  "settle-time": "3 to 5 minutes",
+  "thrust-straight": "0.10&deg;",
+  "prong-gap": "196 mm",
+  "android": "Android 10 or newer",
+  "bracket-weight": "about 225 to 345 g",
+  "design-version": "1.7.0"
+}

@@ -1,9 +1,9 @@
-<!--{"title": "How it works", "description": "How Rim Reader measures wheel alignment with a phone's gyroscope and a 3D-printed bracket, explained in plain words with diagrams.", "nav": "how"}-->
+<!--{"title": "How it works: checking alignment with your phone", "description": "How Rim Reader checks wheel alignment with your phone's gyroscope and a 3D-printed bracket: what you do, and why it works, in plain words.", "nav": "how"}-->
 <section class="page-head">
   <div class="wrap">
     <p class="rr-eyebrow">How it works</p>
-    <h1>A gyroscope, two prongs and a walk round the car</h1>
-    <p class="lead">Your phone already measures how far it turns and which way is down. Rim Reader holds it against each wheel the same way every time, and compares the wheels with each other.</p>
+    <h1>How Rim Reader checks your alignment</h1>
+    <p class="lead">Your phone already senses how far it turns and which way is down. Rim Reader holds it against each wheel the same way every time, and compares the wheels with each other.</p>
   </div>
 </section>
 
@@ -11,11 +11,14 @@
   <div class="wrap">
     <div class="media-row">
       <div>
-        <h2>The idea</h2>
-        <p>The phone&rsquo;s <strong>gyroscope</strong> measures how far the phone has turned. Its <strong>accelerometer</strong> measures which way is down.</p>
-        <p>Rim Reader clamps the phone in a flat 3D-printed bracket. On each long edge the bracket has two prongs, 196 mm (about 7.7 in) apart. You hold the bracket on top of each wheel with the two prong tips resting on the rim&rsquo;s lip, at about 11 and 1 o&rsquo;clock.</p>
-        <p>The line between those two tips lies in the plane of the wheel, so its direction <em>is</em> the direction the wheel points. As you walk from wheel to wheel, the gyroscope tracks how far the phone turned on the way. That lets the app compare each wheel&rsquo;s direction with every other wheel&rsquo;s. Toe, thrust angle and steer-ahead all come from those comparisons.</p>
-        <p>Camber comes from gravity: the bracket stands on its edge against the side of the rim, and the accelerometer reads how far the wheel leans.</p>
+        <h2>What you&rsquo;ll do</h2>
+        <ol class="steps">
+          <li><strong>Fit your phone in the bracket.</strong> It goes in with its case on, and a printed wedge locks it in place. <a href="bracket.html">The bracket</a></li>
+          <li><strong>Calibrate.</strong> A few minutes on a hard floor against a wall, once a month. It measures your bracket and how the phone sits in it. <a href="help/calibration.html">Calibration</a></li>
+          <li><strong>Get the car ready.</strong> Level ground, steering wheel centred, engine off, wheels chocked. Let the phone settle outside for {{fact:settle-time}}. <a href="help/before-you-measure.html">The checklist</a></li>
+          <li><strong>Walk the car.</strong> Rest the bracket on the ground for ten seconds, then hold it on top of each wheel the screen lights, prongs on the rim&rsquo;s metal lip. Readings take themselves: hold still and the phone beeps. <a href="help/measure-toe.html">Measuring toe</a></li>
+          <li><strong>Read and adjust.</strong> Check the confidence first, then what to adjust. Turn the tie rod a little, measure again, and compare before and after. <a href="help/results.html">Reading the result</a></li>
+        </ol>
       </div>
       <figure class="diagram">{{diagram:bracket-on-wheel}}</figure>
     </div>
@@ -25,88 +28,66 @@
 <section class="section">
   <div class="wrap">
     <div class="text">
-      <h2>One lap, step by step</h2>
-
-      <h3>1. A rest on the ground gives the gyroscope its zero</h3>
-      <p>Every lap starts with the bracket lying still on the ground for ten seconds. No phone gyroscope reads zero when it is still. That small leftover would add up during a walk round the car, so the app measures it while nothing is moving and subtracts it from everything after. The same rest tells the app which way is down. A hand can&rsquo;t give this zero: even a steady hand moves about 1&deg; a second.</p>
-
-      <h3>2. Every wheel is read twice, with a lift between</h3>
-      <p>At each wheel you hold still for a reading, lift the bracket right off, set it back and hold still again. Over a few seconds the gyroscope can&rsquo;t drift by any amount that matters. So if the two readings disagree, the bracket didn&rsquo;t go back on the same spot, and the app asks for that wheel again straight away. You find out at the wheel, not a lap later.</p>
-      <p>You don&rsquo;t tap anything. When the bracket is level and steady, the reading is taken by itself and the phone beeps and buzzes.</p>
-
-      <h3>3. Going back to each wheel measures the drift</h3>
-      <p>The app sets the order: rear left, rear right, rear left, rear right, then front right, front left, front right, front left. Each visit is two readings, so a full lap is 16. The wheels don&rsquo;t move between visits, so any difference between a wheel&rsquo;s first and second visit is drift that built up while you walked. The app measures that drift for this lap and removes it from every reading.</p>
-      <p>Each axle is closed this way on its own. If an axle&rsquo;s drift is too large to trust, the app asks you to read that axle again. After two redos it says the lap would not close, and shows no numbers. An honest refusal beats a wrong alignment.</p>
+      <h2>Why it works</h2>
+      <p>The phone&rsquo;s <strong>gyroscope</strong> measures how far the phone turns. Its <strong>accelerometer</strong> measures which way is down. The bracket touches the rim&rsquo;s lip at two points, so the line between them points the way the wheel points. As you walk from wheel to wheel, the gyroscope tracks how far the phone turned on the way, and the app compares each wheel with every other. Toe, thrust angle and steer-ahead all come from those comparisons. Camber comes from gravity.</p>
+      <p>Tap a question for the detail.</p>
     </div>
-    <figure class="diagram" style="max-width:560px">{{diagram:lap-order}}</figure>
-    <div class="text">
-      <h3>4. The rear axle sets the line the car drives along</h3>
-      <p>Measuring the front wheels alone tells you only their <strong>total</strong> toe: the two front wheels compared with each other. To know what each front wheel is doing on its own, you need the direction the car actually travels, and the rear axle sets that. The average direction of the two rear wheels is the <strong>thrust line</strong>. Each front wheel&rsquo;s toe is measured against it, and so is <strong>steer-ahead</strong>, which tells you whether your steering wheel will sit straight. That is why a full lap reads both axles.</p>
-    </div>
-    <div class="grid two">
+    <div class="text more-group">
+      {{more:Why does the bracket sit on the ground first?|rest}}
+      <p>Every lap starts with the bracket lying still on the ground for ten seconds. No phone gyroscope reads exactly zero when it is still. That small leftover would add up during a walk round the car, so the app measures it while nothing is moving and subtracts it from everything after. The same rest tells the app which way is down. A hand can&rsquo;t give this zero: even a steady hand moves about 1&deg; a second.</p>
+      {{/more}}
+      {{more:Why is each wheel read twice?|twice}}
+      <p>At each wheel you hold still for a reading, lift the bracket right off, set it back and hold still again. Over a few seconds the gyroscope can&rsquo;t drift by any amount that matters, so if the two readings disagree, the bracket didn&rsquo;t go back on the same spot. The app asks for that wheel again straight away. You find out at the wheel, not a lap later.</p>
+      {{/more}}
+      {{more:How does it remove the gyroscope&rsquo;s drift?|drift}}
+      <p>The app sets the order: rear left, rear right, rear left, rear right, then front right, front left, front right, front left. The wheels don&rsquo;t move between visits, so any difference between a wheel&rsquo;s first and second visit is drift that built up while you walked. The app measures that drift and removes it from every reading.</p>
+      <figure class="diagram" style="max-width:520px">{{diagram:lap-order}}</figure>
+      <p>Each axle is checked this way on its own. If an axle&rsquo;s drift is too large to trust, the app asks you to read that axle again. After two redos it says the lap would not close, and shows no numbers. An honest refusal beats a wrong alignment.</p>
+      {{/more}}
+      {{more:Why does it measure the rear wheels too?|rear}}
+      <p>Measuring the front wheels alone tells you only their <strong>total</strong> toe: the two front wheels compared with each other. To know what each front wheel is doing on its own, you need the direction the car actually travels, and the rear axle sets that. The average direction of the two rear wheels is the <strong>thrust line</strong>. Each front wheel&rsquo;s toe is measured against it, and so is <strong>steer-ahead</strong>, which tells you whether your steering wheel will sit straight.</p>
       <figure class="diagram">{{diagram:thrust}}</figure>
       <figure class="diagram">{{diagram:steer-ahead}}</figure>
-    </div>
-    <div class="text">
-      <h3>5. The front doors give the thrust angle (optional)</h3>
-      <p>The thrust line shows which way the rear wheels push the car, but not whether that is straight compared with the car&rsquo;s <strong>body</strong>. Tick Thrust, and the app also reads each front door&rsquo;s window glass: the bracket lies flat in the bottom back corner of the window. The two doors are mirror images, so the curve of the glass cancels out, and together they give the body&rsquo;s centreline. The <strong>thrust angle</strong> is the rear axle&rsquo;s direction against that centreline, and it shows which rear wheel is off.</p>
-      <p>A thrust angle within 0.10&deg; is reported as straight, because a door can hang slightly differently from its twin (we estimate up to about a tenth of a degree). If a door reading fails, only the thrust angle is dropped. The wheel numbers are kept.</p>
-
-      <h3>6. Camber, read on the bracket&rsquo;s edge and corrected for the floor (optional)</h3>
-      <p>Camber is read after the toe lap has closed, on a second trip round the car, so handling the bracket for camber can&rsquo;t disturb the toe numbers. At each tire:</p>
+      {{/more}}
+      {{more:How do the front doors give the thrust angle?|doors}}
+      <p>The thrust line shows which way the rear wheels push the car, but not whether that is straight compared with the car&rsquo;s <strong>body</strong>. Tick Thrust, and the app also reads each front door&rsquo;s window glass, with the bracket flat in the bottom back corner of the window. The two doors are mirror images, so the curve of the glass cancels out, and together they give the body&rsquo;s centreline. The <strong>thrust angle</strong> is the rear axle&rsquo;s direction against that centreline, and it shows which rear wheel is off.</p>
+      <p>A thrust angle within {{fact:thrust-straight}} is reported as straight, because a door can hang slightly differently from its twin, by up to about a tenth of a degree. If a door reading fails, only the thrust angle is dropped. The wheel numbers are kept.</p>
+      {{/more}}
+      {{more:How is camber read, and corrected for the floor?|camber}}
+      <p>Camber is read after the toe lap, on a second trip round the car, so handling the bracket for camber can&rsquo;t disturb the toe numbers. At each tire:</p>
       <ol>
         <li><strong>Two floor readings.</strong> The bracket lies flat on the floor beside the tire, then is turned round where it lies. Together they measure the slope of the floor there.</li>
         <li><strong>One top-of-rim reading</strong>, as for toe, which tells camber which way the wheel faces.</li>
         <li><strong>Two side-of-rim readings</strong>, with a lift between. The bracket stands on its edge against the side of the rim, and the two readings must agree.</li>
       </ol>
-      <p>The app corrects each axle&rsquo;s camber for the floor slope it measured beside the tires, so a garage floor that isn&rsquo;t quite level is accounted for. Reading the top of the rim as a reference made camber about 3.5 times more repeatable in our tests than gravity alone, the way a simple digital gauge reads it.</p>
+      <p>The app corrects each axle&rsquo;s camber for the floor slope beside the tires, so a garage floor that isn&rsquo;t quite level is accounted for. Using the top of the rim as a reference makes camber {{fact:camber-gain}} more repeatable than gravity alone, which is how a simple digital gauge reads it.</p>
+      {{/more}}
+      {{more:What does Bracket Calibration measure?|calibration}}
+      <p>No printed bracket is perfect, and no phone sits perfectly square in it. Calibration takes a few minutes on a hard floor against a wall, at a mark on a strip of tape. It measures:</p>
+      <ul>
+        <li><strong>The angle between the bracket&rsquo;s two long edges.</strong> The left wheels are read on one edge and the right wheels on the other, so any difference would go straight into total toe. The app measures it two independent ways, with the gyroscope and with gravity, and won&rsquo;t save a calibration where they disagree by more than 0.05&deg;.</li>
+        <li><strong>How the phone sits in the bracket</strong>, for example &ldquo;0.29&deg; nose down, 0.28&deg; to the side&rdquo;. After calibration the app reads the bracket, not the phone.</li>
+        <li><strong>The camber zero</strong>: the combined offset of the phone&rsquo;s accelerometer and the bracket&rsquo;s edge.</li>
+        <li><strong>A grade for the phone</strong>: Good, Marginal or Not suitable, and how much carrying it costs in drift.</li>
+      </ul>
+      <figure class="diagram">{{diagram:calibration-setup}}</figure>
+      <p>A calibration that isn&rsquo;t good says why and isn&rsquo;t used. <a href="help/calibration.html">Calibration, step by step</a></p>
+      {{/more}}
     </div>
   </div>
 </section>
 
 <section class="section alt">
   <div class="wrap">
-    <div class="media-row">
-      <div>
-        <h2>Bracket calibration</h2>
-        <p>No printed bracket is perfect, and no phone sits perfectly square in it. So before the first measurement, then every 30 days and with any new phone or bracket, you run Bracket Calibration. It takes a few minutes on a hard floor against a wall, at a mark on a strip of tape. It measures:</p>
-        <ul>
-          <li><strong>The angle between the bracket&rsquo;s two long edges.</strong> The left wheels are read on one edge and the right wheels on the other, so any difference would go straight into total toe. The app measures it two independent ways, with the gyroscope and with gravity, and won&rsquo;t save a calibration where they disagree by more than 0.05&deg;.</li>
-          <li><strong>How the phone sits in the bracket</strong>, for example &ldquo;0.29&deg; nose down, 0.28&deg; to the side&rdquo;. After calibration the app reads the bracket, not the phone.</li>
-          <li><strong>The camber zero</strong>: the combined offset of the phone&rsquo;s accelerometer and the bracket&rsquo;s edge.</li>
-          <li><strong>A grade for the phone</strong>: Good, Marginal or Not suitable, from a minute lying still, and how much carrying it costs in drift, from two short walks.</li>
-        </ul>
-        <p>A calibration that isn&rsquo;t good says why and isn&rsquo;t used. <a href="help/calibration.html">Calibration, step by step</a>.</p>
-      </div>
-      <figure class="diagram">{{diagram:calibration-setup}}</figure>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="grid two">
-      <div class="text">
-        <h2>What it asks of you</h2>
-        <ul>
-          <li>Level, firm ground. Steering wheel centered by its spokes and logo, then left alone. Engine off, wheels chocked, the car on its wheels, not on a jack.</li>
-          <li>Both hands on the bracket, fingertips beside the prong tips on the rim&rsquo;s lip.</li>
-          <li>Prongs on the metal lip of the rim, never on the tire&rsquo;s rubber. In one test session, prongs touching rubber roughly doubled the error.</li>
-          <li>Three to five minutes for the phone to settle to the outdoor temperature. A phone that is warming up or cooling down drifts.</li>
-          <li>The screen on and the app in front for the whole lap.</li>
-        </ul>
-        <p><a href="help/before-you-measure.html">Before you measure: the full checklist</a></p>
-      </div>
-      <div class="text">
-        <h2>What it doesn&rsquo;t do</h2>
-        <ul>
-          <li>It is not a professional alignment. Every result, and every page of the report, says it is an estimate to be checked by a qualified shop.</li>
-          <li>It doesn&rsquo;t measure caster, steering axis inclination or toe-out on turns yet.</li>
-          <li>It doesn&rsquo;t know your car&rsquo;s tie-rod threads. It says which way to turn the front of each tire and how far; you turn the rod a little and watch the number move the right way.</li>
-          <li>Your car&rsquo;s factory specs aren&rsquo;t built in yet; they are coming soon. Until then you type them in, or use the generic targets. <a href="coming-soon.html#factory-specs">Why</a>.</li>
-        </ul>
-        <p><a href="accuracy.html">Accuracy</a> &middot; <a href="compare.html">Other ways to check alignment</a></p>
-      </div>
+    <div class="text">
+      <h2>What it doesn&rsquo;t do</h2>
+      <ul>
+        <li>It is not a professional alignment. Every result, and every page of the report, says it is an estimate to be checked by a qualified shop.</li>
+        <li>It doesn&rsquo;t measure caster, steering axis inclination or toe-out on turns yet.</li>
+        <li>It doesn&rsquo;t know your car&rsquo;s tie-rod threads. It says which way to turn the front of each tire and how far; you turn the rod a little and watch the number move the right way.</li>
+        <li>Your car&rsquo;s factory specs aren&rsquo;t built in yet. Until then you type them in, or use the generic targets. <a href="coming-soon.html#factory-specs">Why</a></li>
+      </ul>
+      <p class="link-row"><a href="accuracy.html">How accurate it is</a><a href="bracket.html">The bracket</a></p>
     </div>
   </div>
 </section>

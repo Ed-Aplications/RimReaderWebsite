@@ -1,9 +1,9 @@
 <!--{"title": "Add thrust angle", "description": "How to add the thrust angle to a Rim Reader lap: two readings on each front door's window glass, where to place the bracket, and what the result means.", "nav": "help", "help": true}-->
 <h1>Add thrust angle</h1>
 <p class="lead">The thrust angle is where the rear axle points the car, compared with the body. Rim Reader reads the body at the front doors&rsquo; window glass: two readings at each door.</p>
-{{figure:assets/img/render/door-glass.webp|The bracket lying flat on a car's front door window glass in the bottom back corner|The bracket on the left front door&rsquo;s glass.}}
+{{figure:assets/img/bracket/door-glass.webp|The bracket lying flat on a car's front door window glass in the bottom back corner|The bracket on the left front door&rsquo;s glass.}}
 
-<h2>Before you start</h2>
+<h2 id="before">Before you start</h2>
 <ul>
   <li>Before Start, tick <strong>Thrust</strong>. <strong>Rear</strong> ticks itself and stays ticked.</li>
   <li>Front windows <strong>fully up</strong>, doors <strong>shut firmly</strong>, nobody in or leaning on the car.</li>
@@ -20,13 +20,17 @@
 </ol>
 {{lesson:Bracket on the Door Glass}}
 
-<h2>Why the door glass</h2>
-<p>The glass is smooth, every car has front doors, and the two doors are mirror images. Reading the same back corner on both sides makes the curve of the glass cancel out, and the two readings together give the body&rsquo;s centreline.</p>
 
 <h2>The result</h2>
 <ul>
-  <li><strong>Thrust</strong> shows in the middle of the car drawing, in degrees with L or R. Within 0.10&deg; it is called straight, because a door can hang slightly differently from its twin.</li>
-  <li>When the thrust angle is over 0.10&deg;, each rear wheel is shown against the car&rsquo;s body, so the wheel that is off shows the bigger number.</li>
+  <li><strong>Thrust</strong> shows in the middle of the car drawing, in degrees with L or R. Within {{fact:thrust-straight}} it is called straight, because a door can hang slightly differently from its twin. (The &plusmn;0.15&deg; in the generic targets is the pass mark for the spec check, a separate thing.)</li>
+  <li>When the thrust angle is over {{fact:thrust-straight}}, each rear wheel is shown against the car&rsquo;s body, so the wheel that is off shows the bigger number.</li>
   <li>If a door&rsquo;s two readings disagree, the bracket is knocked, or a door is read more than a minute and a half away from the wheels, the app gives up the thrust angle for that lap and keeps the wheel numbers. The thrust angle never costs you the wheel numbers.</li>
   <li>Want to drop it mid-lap? <strong>Skip thrust angle</strong>, under the car at a door, drops the doors for this lap after asking once.</li>
 </ul>
+
+<div class="more-group">
+{{more:Why the door glass?|why-glass}}
+<p>The glass is smooth, every car has front doors, and the two doors are mirror images. Reading the same back corner on both sides makes the curve of the glass cancel out, and the two readings together give the body&rsquo;s centreline.</p>
+{{/more}}
+</div>

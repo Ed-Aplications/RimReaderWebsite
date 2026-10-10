@@ -22,3 +22,22 @@
     });
   });
 })();
+
+// A collapsible section opens when the address points at it or at something
+// inside it (for example help/troubleshooting.html#phone-moved).
+(function () {
+  function openTarget() {
+    var id = decodeURIComponent(location.hash.slice(1));
+    if (!id) return;
+    var el = document.getElementById(id);
+    if (!el) return;
+    for (var d = el; d; d = d.parentElement) if (d.tagName === 'DETAILS') d.open = true;
+    el.scrollIntoView();
+  }
+  document.addEventListener('DOMContentLoaded', openTarget);
+  window.addEventListener('hashchange', openTarget);
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (a && a.getAttribute('href') === location.hash) openTarget();
+  });
+})();

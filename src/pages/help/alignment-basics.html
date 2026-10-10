@@ -1,7 +1,7 @@
 <!--{"title": "Alignment basics", "description": "Toe, camber, thrust angle, steer-ahead, cross camber and caster explained in plain words, with diagrams and the sign conventions Rim Reader uses.", "nav": "help", "help": true}-->
 <h1>Alignment basics</h1>
 <p class="lead">The handful of angles that decide how a car tracks, how its tires wear and where its steering wheel sits, and the signs Rim Reader uses for them.</p>
-<div class="toc"><b>On this page</b><ul class="two-col-list"><li><a href="#toe">Toe</a></li><li><a href="#camber">Camber</a></li><li><a href="#thrust">Thrust line and thrust angle</a></li><li><a href="#steer-ahead">Steer-ahead</a></li><li><a href="#cross-camber">Cross camber</a></li><li><a href="#caster">Caster</a></li><li><a href="#units">Units and signs</a></li><li><a href="#terms">More terms</a></li></ul></div>
+<div class="toc"><b>On this page</b><ul class="two-col-list"><li><a href="#toe">Toe</a></li><li><a href="#camber">Camber</a></li><li><a href="#thrust">Thrust line and thrust angle</a></li><li><a href="#steer-ahead">Steer-ahead</a></li><li><a href="#cross-camber">Cross camber</a></li><li><a href="#caster">Caster</a></li></ul></div>
 
 <h2 id="toe">Toe</h2>
 <p>Seen from above, toe is whether the front of each tire points in toward the middle of the car (<strong>toe-in</strong>) or out (<strong>toe-out</strong>). <strong>Total toe</strong> is the two wheels on an axle compared with each other; a spec sheet usually gives it. Each wheel&rsquo;s own toe is measured against the thrust line. Toe that is off wears tires fastest, feathering the tread across its width, and it is the angle you adjust most.</p>
@@ -13,7 +13,7 @@
 <figure class="diagram">{{diagram:camber}}</figure>
 
 <h2 id="thrust">Thrust line and thrust angle</h2>
-<p>The rear axle steers the car too. The <strong>thrust line</strong> is the direction the rear wheels push the car: the average of the two rear wheels&rsquo; directions. The <strong>thrust angle</strong> is that line compared with the body&rsquo;s centreline. If it isn&rsquo;t straight, the car crabs slightly down the road, and the steering wheel ends up turned to make it go straight. Rim Reader reads the body at the front doors&rsquo; window glass, and calls a thrust angle within 0.10&deg; straight.</p>
+<p>The rear axle steers the car too. The <strong>thrust line</strong> is the direction the rear wheels push the car: the average of the two rear wheels&rsquo; directions. The <strong>thrust angle</strong> is that line compared with the body&rsquo;s centreline. If it isn&rsquo;t straight, the car crabs slightly down the road, and the steering wheel ends up turned to make it go straight. Rim Reader reads the body at the front doors&rsquo; window glass, and calls a thrust angle within {{fact:thrust-straight}} straight.</p>
 <figure class="diagram">{{diagram:thrust}}</figure>
 
 <h2 id="steer-ahead">Steer-ahead</h2>
@@ -26,15 +26,16 @@
 <h2 id="caster">Caster</h2>
 <p>Seen from the side, caster is the tilt of the steering axis. It gives the steering its self-centring feel and its straight-line stability. Rim Reader doesn&rsquo;t measure caster yet; it is <a href="{{root}}coming-soon.html">planned</a>, read by steering each front wheel left and right.</p>
 
-<h2 id="units">Units and signs</h2>
+<div class="more-group">
+{{more:Units and signs|units}}
 <ul>
   <li>Angles are in degrees to two decimals, for example 0.16&deg;. Toe can also be shown, per vehicle, in degrees and minutes, millimetres or inches; millimetres and inches need the tire size.</li>
   <li>Toe-in is +, toe-out is &minus;. Camber with the top leaning in is &minus;.</li>
   <li>Thrust angle and steer-ahead are in degrees with L or R.</li>
   <li>Two decimals is the display, not the accuracy. See <a href="{{root}}accuracy.html">Accuracy</a>.</li>
 </ul>
-
-<h2 id="terms">More terms</h2>
+{{/more}}
+{{more:More terms|terms}}
 <dl class="specs">
   <dt>Rim lip</dt><dd>The flat outer ring at the edge of the wheel rim. The bracket&rsquo;s prong noses rest on it.</dd>
   <dt>Spec</dt><dd>The range a maker allows for an angle, often a preferred value with a tolerance.</dd>
@@ -43,3 +44,5 @@
   <dt>Closing a lap</dt><dd>Visiting each wheel twice, so the app can measure the drift in between and remove it.</dd>
   <dt>Confidence</dt><dd>High, Medium or Low, with the reasons: how much a result can be trusted.</dd>
 </dl>
+{{/more}}
+</div>

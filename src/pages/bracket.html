@@ -1,67 +1,25 @@
-<!--{"title": "The bracket", "description": "The Rim Reader bracket: a 3D-printed bracket and one wedge that hold your phone square against the rim. Sizes, which wedge to print, which phones fit, print settings and the seven rules for making your own.", "nav": "bracket", "js": ["tools.js"]}-->
+<!--{"title": "The bracket", "description": "The Rim Reader bracket: two 3D-printed parts that hold your phone square on the rim. Find the wedge for your phone, print it, or make your own.", "nav": "bracket", "js": ["tools.js"]}-->
 <section class="page-head">
   <div class="wrap">
     <p class="rr-eyebrow">The bracket</p>
     <h1>A printed bracket that holds your phone true</h1>
-    <p class="lead">A flat 3D-printed bracket that holds your phone and touches your wheel&rsquo;s rim at two points, the same way every time. You print two parts: the bracket and one wedge. No screws, magnets, springs or supports.</p>
+    <p class="lead">Two printed parts, the bracket and one wedge, hold your phone square against the rim, the same way every time. No screws, magnets or hardware to buy. It fits phones {{fact:phone-width}} wide in their case.</p>
   </div>
 </section>
 
-<section class="section alt">
+<section class="section alt" style="padding-top:var(--rr-space-6)">
   <div class="wrap">
-    {{figure:assets/img/render/studio-phone.webp|The Rim Reader bracket in graphite, with a phone clamped in it by an orange wedge|Print the wedge in a different colour from the bracket, so a missing wedge is obvious.}}
-    <div class="grid two">
-      <div class="rr-card">
-        <h3>Our bracket <span class="tag">Print files at launch</span></h3>
-        <p>The Rim Reader bracket is the design the app is built around. It prints on a home 3D printer with a 220 &times; 220 mm bed, needs nothing bought, and fits phones 67 to 91 mm wide in their case with a set of slide-in wedges.</p>
-        <p>The print files will be published when the app launches. <a href="coming-soon.html#print-files">What&rsquo;s coming</a>.</p>
-      </div>
-      <div class="rr-card">
-        <h3>Before every use</h3>
-        <p>Check the bracket for cracks, looseness or wear, and don&rsquo;t use it if you find any. Keep the prong noses clean and undamaged: they are the measuring surface. A bracket is printed by you or by others, so its quality is in your hands.</p>
-      </div>
-    </div>
+    {{figure:assets/img/bracket/studio-phone.webp|The Rim Reader bracket in graphite, with a phone clamped in it by an orange wedge|The bracket with a phone locked in by its wedge.}}
   </div>
 </section>
 
-<section class="section">
+<section class="section" id="wedge">
   <div class="wrap">
-    <div class="media-row">
+    <div class="split">
       <div class="text">
-        <p class="rr-eyebrow">The parts</p>
-        <h2>One bracket, one wedge</h2>
-        <p><strong>The bracket</strong> is a solid 15 mm slab with a tray for the phone. A fixed <strong>rail</strong> runs along one long side; the phone&rsquo;s right side bears on it. An <strong>end stop</strong> at the FRONT end holds the phone&rsquo;s top. The other long side is a <strong>tapered wall</strong>, angled 4.5&deg;. A <strong>window</strong> in the rail leaves room for buttons on the phone&rsquo;s right side, and a <strong>channel</strong> under the phone&rsquo;s top end leaves room for the camera bump.</p>
-        <p>Four <strong>prongs</strong>, one at each corner, are the only parts that touch the wheel. Each has a rounded nose, so it makes the same line contact on the rim&rsquo;s lip every time. Only the two on the wheel side touch; the other pair lets either long edge face the wheel.</p>
-        <p><strong>The wedge</strong> is a tapered key. It drops into the gap on the phone&rsquo;s left side, and pushing it toward FRONT clamps the phone against the rail and the end stop. At 4.5&deg; it locks itself: it stays put until you pull its tab.</p>
-      </div>
-      <figure class="diagram">{{diagram:wedge-fit}}</figure>
-    </div>
-    {{figure:assets/img/render/studio-empty.webp|The empty bracket from above at an angle, showing the tray, the rail with its window, the end stop with FRONT engraved, the camera channel and the four prongs, with an orange wedge beside it|The bracket and a long wedge. The window in the near rail is for the phone&rsquo;s right-side buttons; the slot across the tray is the camera channel.}}
-    {{figure:assets/img/render/exploded.webp|The bracket, wedge and phone pulled apart, showing the tray, rail, end stop, camera channel and the four prongs|Bracket, wedge and phone, pulled apart.}}
-    <h3>Sizes</h3>
-    <dl class="specs">
-      <dt>Bracket</dt><dd>210 &times; 120 &times; 15 mm slab; 210 &times; 184 mm across the prongs; walls 17 mm above the floor of the tray</dd>
-      <dt>Prongs</dt><dd>Four, 196 mm apart on each long edge; reach 32 mm past the edge to clear the tire&rsquo;s sidewall; 14 mm wide, 8 mm tall, rounded 7 mm nose</dd>
-      <dt>Phones</dt><dd>67 to 91 mm wide in their case; up to 15 mm thick including case and camera bump; the tray is 172 mm long, and longer phones may overhang the open end</dd>
-      <dt>Wedges</dt><dd>Two sets of eight: long (140 mm) for phones with no buttons on the left side; short (40 mm) for phones with buttons there. Each wedge covers 3 mm of phone width.</dd>
-      <dt>Markings</dt><dd>FRONT with an arrow either side, engraved on the front end; the wedge&rsquo;s width band engraved on its top</dd>
-      <dt>Material</dt><dd>PETG, about 225 to 345 g for the bracket and one wedge</dd>
-      <dt>Design</dt><dd>Version 1.7.0</dd>
-    </dl>
-  </div>
-</section>
-
-<section class="section alt" id="wedge">
-  <div class="wrap">
-    <div class="grid two">
-      <div class="text">
-        <p class="rr-eyebrow">Which wedge</p>
+        <p class="rr-eyebrow">Will my phone fit?</p>
         <h2>Find your wedge</h2>
-        <ol class="steps">
-          <li><strong>Measure the phone in its case, at its widest point.</strong> Lay a ruler across it with the case on.</li>
-          <li><strong>Check the left side.</strong> Hold the phone screen toward you, top up. Buttons on the left side take a <strong>short</strong> wedge; no buttons there, a <strong>long</strong> one.</li>
-          <li><strong>Print the wedge marked with your band.</strong> An 83 mm phone takes the 82-85 wedge.</li>
-        </ol>
+        <p>One wedge fits each phone width. Measure your phone <strong>in its case</strong>, at its widest point, and check its left side for buttons (screen toward you, top up).</p>
         <p class="rr-muted">On a boundary, such as 82.0 mm, either neighbour fits; for a short wedge take the narrower band. If a short wedge presses a button, use the next band down.</p>
       </div>
       <form class="finder" id="wedge-finder" autocomplete="off">
@@ -76,138 +34,80 @@
           </div>
         </div>
         <label class="check"><input type="checkbox" id="wf-left"> The phone has buttons on its left side</label>
-        <div id="wf-result" aria-live="polite"><noscript><p>The finder needs JavaScript. Use the table below.</p></noscript></div>
+        <div id="wf-result" aria-live="polite"><noscript><p>The finder needs JavaScript. Use the table of popular phones below.</p></noscript></div>
       </form>
     </div>
 
-    {{figure:assets/img/render/wedges.webp|All sixteen wedges in two rows: eight long wedges and eight short ones, each a size thinner than the last|The long set (behind) and the short set (in front), eight sizes each. You print only the one that fits your phone.}}
-    {{lesson:Choose Your Wedge}}
-
-    <h3 id="phones">Popular phones and their wedge</h3>
-    <p>A guide only. The cased widths are <strong>estimates</strong>: the phone&rsquo;s published width plus 6.5 mm for a typical case, except the Pixel 8 Pro, which we measured. A slim case can be 2 to 4 mm narrower and drop a phone one band, so measure your own.</p>
+    <div class="text more-group">
+    {{more:Popular phones and their wedge|phones}}
+    <p>A guide only. The widths in a case are <strong>estimates</strong>: the phone&rsquo;s published width plus 6.5 mm for a typical case. A slim case can be 2 to 4 mm narrower and drop a phone one band, so measure your own.</p>
     <div class="table-wrap">
-      <table>
-        <thead><tr><th>Phone</th><th class="num">Width, bare</th><th class="num">In a case (est.)</th><th>Wedge</th><th>Set</th></tr></thead>
+      <table class="stack inline phone-table">
+        <thead><tr><th>Phone</th><th class="num bare">Width, bare</th><th class="num">In a case (est.)</th><th>Wedge</th><th>Set</th></tr></thead>
         <tbody>
-          <tr><td>Google Pixel 8 Pro</td><td class="num">76.5 mm</td><td class="num">83 mm (measured)</td><td>82-85</td><td>long</td></tr>
-          <tr><td>Google Pixel 8</td><td class="num">70.8 mm</td><td class="num">77.3 mm</td><td>76-79</td><td>long</td></tr>
-          <tr><td>Google Pixel 9</td><td class="num">72.0 mm</td><td class="num">78.5 mm</td><td>76-79</td><td>long</td></tr>
-          <tr><td>Google Pixel 9 Pro XL</td><td class="num">76.6 mm</td><td class="num">83.1 mm</td><td>82-85</td><td>long</td></tr>
-          <tr><td>Google Pixel 9a</td><td class="num">73.3 mm</td><td class="num">79.8 mm</td><td>79-82</td><td>long</td></tr>
-          <tr><td>Google Pixel 10a</td><td class="num">73.0 mm</td><td class="num">79.5 mm</td><td>79-82</td><td>long</td></tr>
-          <tr><td>Google Pixel 7a</td><td class="num">72.9 mm</td><td class="num">79.4 mm</td><td>79-82</td><td>long</td></tr>
-          <tr><td>Samsung Galaxy S24</td><td class="num">70.6 mm</td><td class="num">77.1 mm</td><td>76-79</td><td>long</td></tr>
-          <tr><td>Samsung Galaxy S24 Ultra</td><td class="num">79.0 mm</td><td class="num">85.5 mm</td><td>85-88</td><td>long</td></tr>
-          <tr><td>Samsung Galaxy S25</td><td class="num">70.5 mm</td><td class="num">77.0 mm</td><td>76-79</td><td>long</td></tr>
-          <tr><td>Samsung Galaxy S25+</td><td class="num">75.8 mm</td><td class="num">82.3 mm</td><td>82-85</td><td>long</td></tr>
-          <tr><td>Samsung Galaxy S25 Ultra</td><td class="num">77.6 mm</td><td class="num">84.1 mm</td><td>82-85</td><td>long</td></tr>
-          <tr><td>Samsung Galaxy A16 5G</td><td class="num">77.9 mm</td><td class="num">84.4 mm</td><td>82-85</td><td>long</td></tr>
-          <tr><td>Samsung Galaxy A36 5G</td><td class="num">78.2 mm</td><td class="num">84.7 mm</td><td>82-85</td><td>long</td></tr>
-          <tr><td>Motorola moto g power (2025)</td><td class="num">77.1 mm</td><td class="num">83.6 mm</td><td>82-85</td><td>long</td></tr>
-          <tr><td>Motorola moto g stylus (2025)</td><td class="num">74.8 mm</td><td class="num">81.3 mm</td><td>79-82</td><td>long</td></tr>
-          <tr><td>Motorola edge (2025)</td><td class="num">73.1 mm</td><td class="num">79.6 mm</td><td>79-82</td><td>short</td></tr>
-          <tr><td>OnePlus 13</td><td class="num">76.5 mm</td><td class="num">83.0 mm</td><td>82-85</td><td>short</td></tr>
-          <tr><td>Nothing Phone (3)</td><td class="num">75.6 mm</td><td class="num">82.1 mm</td><td>82-85</td><td>short</td></tr>
-          <tr><td>Apple iPhone 15 / 16 / 16e</td><td class="num">71.5&ndash;71.6 mm</td><td class="num">78.0&ndash;78.1 mm</td><td>76-79</td><td>short</td></tr>
-          <tr><td>Apple iPhone 16 Pro / 17 / 17 Pro</td><td class="num">71.5&ndash;71.9 mm</td><td class="num">78.0&ndash;78.4 mm</td><td>76-79</td><td>short</td></tr>
-          <tr><td>Apple iPhone 16 Pro Max</td><td class="num">77.6 mm</td><td class="num">84.1 mm</td><td>82-85</td><td>short</td></tr>
-          <tr><td>Apple iPhone 17 Pro Max</td><td class="num">78.0 mm</td><td class="num">84.5 mm</td><td>82-85</td><td>short</td></tr>
-          <tr><td>Apple iPhone Air</td><td class="num">74.7 mm</td><td class="num">81.2 mm</td><td>79-82</td><td>short</td></tr>
+          <tr><td>Google Pixel 8 Pro</td><td class="num bare">76.5 mm</td><td class="num">83.0 mm</td><td>82-85</td><td>long</td></tr>
+          <tr><td>Google Pixel 8</td><td class="num bare">70.8 mm</td><td class="num">77.3 mm</td><td>76-79</td><td>long</td></tr>
+          <tr><td>Google Pixel 9</td><td class="num bare">72.0 mm</td><td class="num">78.5 mm</td><td>76-79</td><td>long</td></tr>
+          <tr><td>Google Pixel 9 Pro XL</td><td class="num bare">76.6 mm</td><td class="num">83.1 mm</td><td>82-85</td><td>long</td></tr>
+          <tr><td>Google Pixel 9a</td><td class="num bare">73.3 mm</td><td class="num">79.8 mm</td><td>79-82</td><td>long</td></tr>
+          <tr><td>Google Pixel 10a</td><td class="num bare">73.0 mm</td><td class="num">79.5 mm</td><td>79-82</td><td>long</td></tr>
+          <tr><td>Google Pixel 7a</td><td class="num bare">72.9 mm</td><td class="num">79.4 mm</td><td>79-82</td><td>long</td></tr>
+          <tr><td>Samsung Galaxy S24</td><td class="num bare">70.6 mm</td><td class="num">77.1 mm</td><td>76-79</td><td>long</td></tr>
+          <tr><td>Samsung Galaxy S24 Ultra</td><td class="num bare">79.0 mm</td><td class="num">85.5 mm</td><td>85-88</td><td>long</td></tr>
+          <tr><td>Samsung Galaxy S25</td><td class="num bare">70.5 mm</td><td class="num">77.0 mm</td><td>76-79</td><td>long</td></tr>
+          <tr><td>Samsung Galaxy S25+</td><td class="num bare">75.8 mm</td><td class="num">82.3 mm</td><td>82-85</td><td>long</td></tr>
+          <tr><td>Samsung Galaxy S25 Ultra</td><td class="num bare">77.6 mm</td><td class="num">84.1 mm</td><td>82-85</td><td>long</td></tr>
+          <tr><td>Samsung Galaxy A16 5G</td><td class="num bare">77.9 mm</td><td class="num">84.4 mm</td><td>82-85</td><td>long</td></tr>
+          <tr><td>Samsung Galaxy A36 5G</td><td class="num bare">78.2 mm</td><td class="num">84.7 mm</td><td>82-85</td><td>long</td></tr>
+          <tr><td>Motorola moto g power (2025)</td><td class="num bare">77.1 mm</td><td class="num">83.6 mm</td><td>82-85</td><td>long</td></tr>
+          <tr><td>Motorola moto g stylus (2025)</td><td class="num bare">74.8 mm</td><td class="num">81.3 mm</td><td>79-82</td><td>long</td></tr>
+          <tr><td>Motorola edge (2025)</td><td class="num bare">73.1 mm</td><td class="num">79.6 mm</td><td>79-82</td><td>short</td></tr>
+          <tr><td>OnePlus 13</td><td class="num bare">76.5 mm</td><td class="num">83.0 mm</td><td>82-85</td><td>short</td></tr>
+          <tr><td>Nothing Phone (3)</td><td class="num bare">75.6 mm</td><td class="num">82.1 mm</td><td>82-85</td><td>short</td></tr>
+          <tr><td>Apple iPhone 15 / 16 / 16e</td><td class="num bare">71.5&ndash;71.6 mm</td><td class="num">78.0&ndash;78.1 mm</td><td>76-79</td><td>short</td></tr>
+          <tr><td>Apple iPhone 16 Pro / 17 / 17 Pro</td><td class="num bare">71.5&ndash;71.9 mm</td><td class="num">78.0&ndash;78.4 mm</td><td>76-79</td><td>short</td></tr>
+          <tr><td>Apple iPhone 16 Pro Max</td><td class="num bare">77.6 mm</td><td class="num">84.1 mm</td><td>82-85</td><td>short</td></tr>
+          <tr><td>Apple iPhone 17 Pro Max</td><td class="num bare">78.0 mm</td><td class="num">84.5 mm</td><td>82-85</td><td>short</td></tr>
+          <tr><td>Apple iPhone Air</td><td class="num bare">74.7 mm</td><td class="num">81.2 mm</td><td>79-82</td><td>short</td></tr>
         </tbody>
-        <caption>The app runs on Android today; iPhones are listed for the bracket only, ahead of the iPhone version. Check your own phone&rsquo;s left side before choosing the set. Phone names are their makers&rsquo; trademarks, used only to identify the phones.</caption>
+        <caption>The app runs on Android; iPhones are listed for the bracket only, ahead of the iPhone version. Check your own phone&rsquo;s left side before choosing the set. Phone names are their makers&rsquo; trademarks, used only to identify the phones.</caption>
       </table>
     </div>
-    <h3>Not designed for</h3>
+    {{/more}}
+    {{more:Phones it isn&rsquo;t designed for|not-designed-for}}
     <ul>
       <li>Phones narrower than 67 mm or wider than 91 mm in their case (the bare &ldquo;mini&rdquo; phones are too narrow).</li>
       <li>Phones shorter than about 140 mm in their case: they get too little bearing on the rail.</li>
       <li>Book-style foldables, and phones with buttons on the top edge, which faces the end stop.</li>
-      <li>Very thick rugged cases that take the phone past 15 mm.</li>
+      <li>Very thick rugged cases that take the phone past {{fact:phone-thick}}.</li>
     </ul>
-    <p>A phone whose camera bump starts at its top edge rests the bump on the ledge at the end stop and sits slightly nose-up. That is normal: Bracket Calibration measures it and corrects for it.</p>
+    <p>A phone whose camera bump starts at its top edge sits slightly nose-up. That is normal: Bracket Calibration measures it and corrects for it.</p>
+    {{/more}}
+    </div>
+    <p class="link-row"><a href="help/bracket-setup.html">Fitting the phone, step by step</a></p>
   </div>
 </section>
 
-<section class="section">
+<section class="section alt">
   <div class="wrap">
-    <div class="media-row">
-      <div class="text">
-        <p class="rr-eyebrow">Fitting the phone</p>
-        <h2>Designed to go in or out in ten seconds</h2>
-        <ol class="steps">
-          <li><strong>Phone in, screen up, top against FRONT.</strong> Slide it forward until its top touches the end stop and its right side touches the rail.</li>
-          <li><strong>Drop the wedge in, thin end first.</strong> It goes in the gap on the phone&rsquo;s left side, thin end toward FRONT.</li>
-          <li><strong>Press the phone down. Push the wedge.</strong> One finger holds the phone flat while another pushes the wedge&rsquo;s tab toward FRONT until it stops. Push it again once the bracket has reached the outdoor temperature.</li>
-        </ol>
-        <p>To release, pull the tab and lift the phone out. A wider phone ends up with the wedge further back; that is normal.</p>
-        <p>Then run <a href="help/calibration.html">Bracket Calibration</a>. If the phone can move in the bracket, every reading will be wrong, and the calibration will say so.</p>
+    <p class="rr-eyebrow">Getting one</p>
+    <h2>Print ours, have it printed, or make your own</h2>
+    <div class="grid three">
+      <div class="rr-card" id="printing">
+        <h3>Print ours <span class="tag">Files at launch</span></h3>
+        <p>It prints in PETG on a home printer with a 220 &times; 220 mm bed, with no supports. The print files will be published when the app launches.</p>
+        <p><a href="bracket-print.html">Print settings and care</a></p>
       </div>
-      {{lesson:Phone in the Bracket}}
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="printing">
-  <div class="wrap">
-    <div class="grid two">
-      <div class="text">
-        <p class="rr-eyebrow">Printing</p>
-        <h2>Print settings</h2>
-        <dl class="specs">
-          <dt>Material</dt><dd>PETG for every part</dd>
-          <dt>Nozzle and layers</dt><dd>0.4 mm nozzle, 0.2 mm layers (it also prints on a 0.6 mm nozzle with 0.3 mm layers)</dd>
-          <dt>Bracket</dt><dd>Back face down, as the file comes. 4 perimeters, 8 top and 8 bottom layers, 30 to 40 % gyroid infill</dd>
-          <dt>Wedge</dt><dd>Standing as the file comes, 100 % infill: it carries the clamping load</dd>
-          <dt>Supports</dt><dd>None, anywhere</dd>
-          <dt>Bed</dt><dd>220 &times; 220 mm or larger; the bracket and a wedge fit on one bed</dd>
-          <dt>Brim</dt><dd>None on a textured PEI sheet; use one on a smooth or cold bed</dd>
-        </dl>
-        <p class="rr-muted">Optional: 0.12 mm layers for the first 10 mm of the bracket give smoother prong noses. A large flat PETG slab can lift at the corners on an open printer; a brim and an enclosure help.</p>
+      <div class="rr-card" id="no-printer">
+        <h3>No printer?</h3>
+        <p>Many libraries, schools and makerspaces have one, and online print services will print a file for you. Ask for PETG.</p>
       </div>
-      <div class="text">
-        <p class="rr-eyebrow">Materials and care</p>
-        <h2>Print it in PETG</h2>
-        <div class="notice safety"><span class="notice-title">PLA and a hot car don&rsquo;t mix</span>PLA softens at about 55 &deg;C. A PLA bracket left in a hot car can take a set with no sign you can see, and every reading after that is off. Use PLA only for a bracket that never leaves the house.</div>
-        <ul>
-          <li><strong>Two colours.</strong> Print the wedge in a different colour from the bracket, so a missing wedge is obvious.</li>
-          <li><strong>After a drop</strong>, a reprint, or a new phone: run Bracket Calibration again. Otherwise every 30 days; the app reminds you.</li>
-          <li><strong>Keep the prong noses clean.</strong> Wipe the rim&rsquo;s lip where they sit, and keep them off the tire&rsquo;s rubber.</li>
-          <li><strong>Temperature.</strong> The bracket is meant for 5 to 50 &deg;C. Push the wedge again once it has reached the outdoor temperature.</li>
-          <li><strong>Before the car moves</strong>, take the phone and the bracket off the wheel.</li>
-        </ul>
+      <div class="rr-card" id="make-your-own">
+        <h3>Make your own</h3>
+        <p>Rim Reader works with a bracket you design yourself if it does seven things, and you run Bracket Calibration with it.</p>
+        <p><a href="make-your-own.html">The seven rules</a></p>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="grid two">
-      <div class="text">
-        <p class="rr-eyebrow">Camera version</p>
-        <h2>A bracket with a window</h2>
-        <p>A second version of the bracket has the camera channel cut right through, so the phone can scan the VIN or the tire label without coming out of the bracket. It is about 30 g lighter.</p>
-        <p>Use the standard bracket for measuring.</p>
-      </div>
-      {{figure:assets/img/render/camera-bracket.webp|The camera version of the bracket, with a window through the slab under the phone's top end|The camera version, with its window under the phone&rsquo;s camera.}}
-    </div>
-  </div>
-</section>
-
-<section class="section alt" id="make-your-own">
-  <div class="wrap">
-    <div class="text">
-      <p class="rr-eyebrow">Make your own</p>
-      <h2>Seven things a bracket needs</h2>
-      <p>Rim Reader works with a bracket you make yourself if it does these seven things. Then run Bracket Calibration with your phone in it.</p>
-      <ol><li><strong>Two straight edges, two prongs each.</strong> Each long edge has two prongs that rest on the rim&rsquo;s lip. Ours are 196 mm apart. Prongs closer together work, but dirt under one costs more.</li><li><strong>Prongs that reach past the tire.</strong> The prongs stick out about 32 mm past the edge, so they reach the lip without touching the tire.</li><li><strong>Phone flat, long side along the prongs.</strong> The phone lies flat, screen up, its long side along the line between the prongs and its top toward FRONT.</li><li><strong>Phone held tight, bracket stiff.</strong> The phone is pushed into a corner and clamped, so it cannot shift or rock. Pressing on the far edge should not tilt the phone; ours is a solid 15 mm slab.</li><li><strong>Flat back, steady on its end.</strong> It lies still on the floor, and stands steady on its end against a wall. The calibration and the floor readings need both.</li><li><strong>A FRONT mark.</strong> FRONT points to the front of the car at every wheel. The edge on the phone&rsquo;s right side is the rail edge; camber is read on it.</li><li><strong>Run Bracket Calibration.</strong> It measures your bracket&rsquo;s own small differences and refuses a phone that moves. Run it again for a new phone or a new bracket.</li></ol>
-      <h3>The ideas behind it</h3>
-      <ul>
-        <li><strong>The rim&rsquo;s lip is the reference.</strong> Its flat outer ring is square to the axle, so two contacts anywhere on it give a line parallel to the wheel.</li>
-        <li><strong>Hard stops locate; the clamp only holds.</strong> A rigid rail, end stop and floor position the phone. Springy phone holders are too soft to hold an angle.</li>
-        <li><strong>Contact on the prongs only</strong>, never the tire or the hub.</li>
-        <li><strong>Calibrate, don&rsquo;t machine.</strong> Any fixed difference either cancels between the two wheels of an axle or is measured once by the app and subtracted.</li>
-      </ul>
-    </div>
+    <div class="notice plain"><span class="notice-title">Before every use</span>Check the bracket for cracks, looseness or wear, and don&rsquo;t use it if you find any. Keep the prong noses clean: they are the measuring surface.</div>
   </div>
 </section>

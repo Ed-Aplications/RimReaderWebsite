@@ -1,7 +1,6 @@
-<!--{"title": "Vehicles, specs and history", "description": "Rim Reader's garage: adding vehicles, scanning the VIN and the tire label, entering specs or using the generic targets, history, notes and comparing before and after.", "nav": "help", "help": true}-->
-<h1>Vehicles, specs and history</h1>
-<p class="lead">The garage keeps your vehicles, the specs each is checked against, and every reading you have taken. Open it with <strong>Select Vehicle</strong> or <strong>Settings &rarr; Garage &amp; History</strong>.</p>
-<div class="toc"><b>On this page</b><ul class="two-col-list"><li><a href="#add">Add a vehicle</a></li><li><a href="#vin">Scan the VIN</a></li><li><a href="#tire">Scan the tire size</a></li><li><a href="#specs">Specs</a></li><li><a href="#generic">Generic targets</a></li><li><a href="#history">History and compare</a></li></ul></div>
+<!--{"title": "Vehicles and specs", "description": "Rim Reader's garage: adding a vehicle, scanning the VIN and the tire label, and entering specs or using the generic targets.", "nav": "help", "help": true}-->
+<h1>Vehicles and specs</h1>
+<p class="lead">The garage keeps your vehicles and the specs each is checked against. Open it with <strong>Select Vehicle</strong> or <strong>Settings &rarr; Garage &amp; History</strong>. Adding a vehicle is optional: without one, results are checked against the generic targets.</p>
 
 <h2 id="add">Add a vehicle</h2>
 <ul>
@@ -13,18 +12,6 @@
 </ul>
 <p>The first vehicle you add is the one in use. Tap a vehicle&rsquo;s box to use it; it says <strong>In use</strong>. Each box has History, Edit and Delete buttons.</p>
 
-<h2 id="vin">Scan the VIN</h2>
-<p>Point the camera at the barcode or printed VIN on the driver&rsquo;s door-jamb label, or at the VIN at the bottom of the windshield, through the glass. Hold the phone upright. In a dark door jamb use the light; at the windshield leave it off. The scanner reads whichever it finds first and closes by itself.</p>
-<ul>
-  <li>It fills <strong>Year</strong> and <strong>Make</strong> from the VIN itself, offline. The <strong>Model</strong> and details come a moment later from the US government&rsquo;s free vehicle database when you&rsquo;re online. Offline, pick the model yourself.</li>
-  <li>Only the first 11 characters are sent, with the 9th hidden, plus the model year. The last six, the serial number, never leave the phone.</li>
-  <li>It refuses a barcode that isn&rsquo;t a VIN, or a VIN whose check digit doesn&rsquo;t match. You can always type it.</li>
-  <li>The VIN identifies the vehicle. It doesn&rsquo;t give alignment specs.</li>
-</ul>
-
-<h2 id="tire">Scan the tire size</h2>
-<p>Point the camera at the tire label in the driver&rsquo;s door jamb. It fills the three boxes with the front tire&rsquo;s size, never the spare&rsquo;s. A tire size is needed to show toe in mm or inches. Flotation sizes such as 31x10.50R15LT can&rsquo;t be entered, so toe on those tires shows in degrees.</p>
-
 <h2 id="specs">Specs</h2>
 <p>Each vehicle has a <strong>Spec source</strong>:</p>
 <dl class="specs">
@@ -33,7 +20,8 @@
   <dt>Factory specs</dt><dd>Built-in factory specs are <a href="{{root}}coming-soon.html#factory-specs">coming soon</a>.</dd>
 </dl>
 
-<h2 id="generic">Generic targets</h2>
+<div class="more-group">
+{{more:The generic targets|generic}}
 <p>Deliberately tighter than most factory tolerances, and checked against published factory figures for common cars. Change them in <strong>Settings &rarr; Generic Alignment Targets</strong>, or <strong>Reset to Default</strong>; saved readings are checked again against the new numbers. Vehicles over 10,000 lb are told to use the maker&rsquo;s specs.</p>
 <div class="table-wrap"><table>
 <thead><tr><th>Angle</th><th class="num">Min</th><th class="num">Max</th></tr></thead>
@@ -48,11 +36,19 @@
 <tr><td>Rear toe, each wheel</td><td class="num">0.00&deg;</td><td class="num">0.15&deg;</td></tr>
 <tr><td>Thrust angle</td><td class="num" colspan="2">&plusmn;0.15&deg;</td></tr>
 </tbody></table></div>
+<p>Thrust angle: within {{fact:thrust-straight}} the app calls it straight; the &plusmn;0.15&deg; here is the pass mark for the spec check.</p>
+{{/more}}
+</div>
 
-<h2 id="history">History and compare</h2>
+<h2 id="vin">Scan the VIN</h2>
+<p>Point the camera at the barcode or printed VIN on the driver&rsquo;s door-jamb label, or at the VIN at the bottom of the windshield, through the glass. Hold the phone upright. In a dark door jamb use the light; at the windshield leave it off. The scanner reads whichever it finds first and closes by itself.</p>
 <ul>
-  <li>The clock at the top of the garage lists every lap and camber run, newest first: vehicle, date and time, and what was measured. A vehicle&rsquo;s own clock lists only its readings.</li>
-  <li>Tap a reading to see the car drawing with every number, the advice, the confidence and the spec check.</li>
-  <li><strong>Compare:</strong> tick two runs and tap Compare. Each shared number shows before &rarr; after with the change, or <em>no measurable change</em> when the difference is within the app&rsquo;s repeatability.</li>
-  <li><strong>Note:</strong> the note button takes up to 280 characters, such as what you adjusted.</li>
+  <li>It fills <strong>Year</strong> and <strong>Make</strong> from the VIN itself, offline. The <strong>Model</strong> and details come a moment later from the US government&rsquo;s free vehicle database when you&rsquo;re online. Offline, pick the model yourself.</li>
+  <li>Only part of the VIN is sent, never its serial number. <a href="{{root}}privacy.html">Privacy</a></li>
+  <li>It refuses a barcode that isn&rsquo;t a VIN, or a VIN whose check digit doesn&rsquo;t match. You can always type it.</li>
+  <li>The VIN identifies the vehicle. It doesn&rsquo;t give alignment specs.</li>
 </ul>
+
+<h2 id="tire">Scan the tire size</h2>
+<p>Point the camera at the tire label in the driver&rsquo;s door jamb. It fills the three boxes with the front tire&rsquo;s size, never the spare&rsquo;s. A tire size is needed to show toe in mm or inches. Flotation sizes such as 31x10.50R15LT can&rsquo;t be entered, so toe on those tires shows in degrees.</p>
+
